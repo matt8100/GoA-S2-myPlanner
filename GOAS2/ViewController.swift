@@ -1,4 +1,4 @@
-//
+﻿//
 //  ViewController.swift
 //  GOAS2
 //
@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         
 >>>>>>> Stashed changes
     }
+
 
 
 }
