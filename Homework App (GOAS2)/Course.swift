@@ -7,9 +7,11 @@
 //
 
 import Foundation
+import UIKit
 
 class Course{
     var name: String
+ 
     
     init?(name: String){
         
@@ -20,6 +22,5 @@ class Course{
        
         // Initialize stored properties.
         self.name = name
-        
     }
 }

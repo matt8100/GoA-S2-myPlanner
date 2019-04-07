@@ -46,7 +46,7 @@ class CourseTableViewController: UITableViewController {
         let course = courses[indexPath.row]
 
         cell.nameLabel.text = course.name
-            
+      
         return cell 
     }
 
@@ -108,7 +108,7 @@ class CourseTableViewController: UITableViewController {
     //MARK: Private Methods
     private func loadSampleCourses() {
 
-        guard let course1 = Course(name: "Math") else {
+        guard let course1 = Course(name: "Math" ) else {
             fatalError("Unable to instantiate course1")
         }
         guard let course2 = Course(name: "Chemistry") else {
