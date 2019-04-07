@@ -71,7 +71,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ggs-Ks-nFw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-130" y="93"/>
+            <point key="canvasLocation" x="633" y="90"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bdm-EY-1cR">
@@ -262,7 +262,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HOM-dQ-jeg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1473" y="91"/>
+            <point key="canvasLocation" x="1479" y="90"/>
         </scene>
         <!--CourseTableViewController-->
         <scene sceneID="fcU-rG-mh9">
@@ -612,7 +612,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pr4-5z-BZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="634" y="92"/>
+            <point key="canvasLocation" x="-130" y="90"/>
         </scene>
         <!--AddHomeworkNavigationController-->
         <scene sceneID="1Lb-9n-A0W">
