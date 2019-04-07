@@ -10,15 +10,18 @@ import UIKit
 
 class AssigmentTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    // Mark: Properties
+    @IBOutlet weak var TitleLabel: UILabel!
+    @IBOutlet weak var DueDayLabel: UILabel!
+    @IBOutlet weak var PriorityLabel: UILabel!
+    @IBOutlet weak var ReminderLabel: UILabel!
+    @IBOutlet weak var OthersLabel: UILabel!
+    
+    
 }
+
+
+
+    
+
+

@@ -12,10 +12,12 @@ import UIKit
 
 class Homework {
     var className: String
-    var title: String
-    var dueDay: String
-    
-    init?(className: String, title: String, dueDay: String){
+    var title: String?
+    var dueDay: String?
+    var priority: String?
+    var reminder: String?
+    var others: String?
+    init?(className: String, title: String?, dueDay: String?, priority: String?, reminder: String?, others: String?){
         
         // The name must not be empty
         guard !className.isEmpty else {
@@ -27,11 +29,22 @@ class Homework {
         guard !dueDay.isEmpty else {
             return nil
         }
+        guard !priority.isEmpty else {
+            return nil
+        }
+        guard !reminder.isEmpty else {
+            return nil
+        }
+        guard !others.isEmpty else {
+            return nil
+        }
         
          // Initialize stored properties.
         self.className = className
         self.title = title
         self.dueDay = dueDay
-        
+        self.priority = priority
+        self.reminder = reminder
+        self.others = others
     }
 }

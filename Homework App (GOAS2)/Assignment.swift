@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+class Assignment {
+    var Title: String
+    var DueDay: String
+    var Priority: String
+    var Reminder: String
+    var Others: String
+    
+    init?(Title:String, DueDay: String, Priority: String, Reminder: String, Others: String){
+        
+        self.Title = Title
+        self.DueDay = DueDay
+        self.Priority = Priority
+        self.Reminder = Reminder
+        self.Others = Others
+}
+}
