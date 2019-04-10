@@ -2,6 +2,12 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
+# OS X temporary files
+.DS_Store
+*.swp
+*.lock
+Profile
+
 ## Build generated
 build/
 DerivedData/
@@ -15,9 +21,7 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-xcuserdata/
-*.xcworkspace/xcuserdata/
-.DS_Store
+*xcworkspace/xcuserdata/*
 
 ## Other
 *.moved-aside
