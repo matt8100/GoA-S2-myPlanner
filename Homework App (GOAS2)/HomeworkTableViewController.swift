@@ -13,6 +13,7 @@ class HomeworkTableViewController: UITableViewController {
     //MARK: Properties
     
     var homeworks = [Homework]()
+    var homeworkToDisplay: Homework? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +55,12 @@ class HomeworkTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let homework = homeworks[indexPath.row]
+        homeworkToDisplay = homework
+        performSegue(withIdentifier: "segueToHomeworkViewing", sender: self)
+    }
+    
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
@@ -71,7 +78,13 @@ class HomeworkTableViewController: UITableViewController {
         }    
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let assignmentViewController = segue.destination as? AssignmentViewController {
+            // We get here when we're about go segue to a AssignmentViewController
+            assignmentViewController.homework = homeworkToDisplay
+        }
+    }
+    
     /*
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
@@ -111,13 +124,13 @@ class HomeworkTableViewController: UITableViewController {
     
     //Mark: Private Function
     private func loadSampleHomeworks() {
-        guard let homework1 = Homework(className: "Math", title: "Pre-calculus 12", dueDay: "Mar 20",reminder:"") else {
+        guard let homework1 = Homework(className: "Math", title: "Pre-calculus 12", dueDay: "Mar 20", priority: "", reminder:"",others:"") else {
             fatalError("Unable to instantiate homework1")
         }
-        guard let homework2 = Homework(className: "Chemistry", title: "Lab 11", dueDay: "Mar 26",reminder:"") else {
+        guard let homework2 = Homework(className: "Chemistry", title: "Lab 11", dueDay: "Mar 26",priority: "", reminder:"",others:"") else {
             fatalError("Unable to instantiate homework2")
         }
-        guard let homework3 = Homework(className: "Biology", title: "Protist Test", dueDay: "Apr 3", reminder:"") else {
+        guard let homework3 = Homework(className: "Biology", title: "Protist Test", dueDay: "Apr 3", priority: "", reminder:"",others:"") else {
             fatalError("Unable to instantiate homework3")
         }
         homeworks += [homework1, homework2, homework3]

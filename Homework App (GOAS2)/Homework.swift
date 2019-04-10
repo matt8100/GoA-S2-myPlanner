@@ -23,21 +23,7 @@ class Homework {
         guard !className.isEmpty else {
             return nil
         }
-        guard !title.isEmpty else {
-            return nil
-        }
-        guard !dueDay.isEmpty else {
-            return nil
-        }
-        guard !priority.isEmpty else {
-            return nil
-        }
-        guard !reminder.isEmpty else {
-            return nil
-        }
-        guard !others.isEmpty else {
-            return nil
-        }
+        
         
          // Initialize stored properties.
         self.className = className
