@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2F7D8B37D2DF372CE5D1496A /* Pods_Homework_App__GOAS2_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4207A8DD388ED4885B192E47 /* Pods_Homework_App__GOAS2_.framework */; };
 		4EA99AF60CFBF9FF740783BB /* Pods_Homework_App__GOAS2_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127DA48B32C7B080006D2290 /* Pods_Homework_App__GOAS2_Tests.framework */; };
-		956E158322548542007087E5 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E158222548542007087E5 /* CustomCell.swift */; };
+		956E158322548542007087E5 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E158222548542007087E5 /* CalendarCell.swift */; };
 		956E1585225486F7007087E5 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E1584225486F7007087E5 /* CalendarViewController.swift */; };
 		A41D024222544DDB00D6B5F9 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D024122544DDB00D6B5F9 /* SettingTableViewController.swift */; };
 		A41D024422544FDB00D6B5F9 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D024322544FDA00D6B5F9 /* Setting.swift */; };
@@ -56,7 +56,7 @@
 		4CD05B41611AF0C62A54D364 /* Pods-Homework App (GOAS2).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2).release.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)/Pods-Homework App (GOAS2).release.xcconfig"; sourceTree = "<group>"; };
 		5AA2B6001EAC14FF6C85DCD6 /* Pods_Homework_App__GOAS2_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework_App__GOAS2_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E321EADB8BE39D4CB404DA /* Pods-Homework App (GOAS2)UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2)UITests.release.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)UITests/Pods-Homework App (GOAS2)UITests.release.xcconfig"; sourceTree = "<group>"; };
-		956E158222548542007087E5 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		956E158222548542007087E5 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		956E1584225486F7007087E5 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		A41D024122544DDB00D6B5F9 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		A41D024322544FDA00D6B5F9 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 				A493747B2241FDC60062A826 /* AppDelegate.swift */,
 				A493747F2241FDC60062A826 /* Main.storyboard */,
 				956E1584225486F7007087E5 /* CalendarViewController.swift */,
-				956E158222548542007087E5 /* CustomCell.swift */,
+				956E158222548542007087E5 /* CalendarCell.swift */,
 				A41D02492254882000D6B5F9 /* AssignmentViewController.swift */,
 				A41D024122544DDB00D6B5F9 /* SettingTableViewController.swift */,
 				A493747D2241FDC60062A826 /* AddHomeworkViewController.swift */,
@@ -338,15 +338,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Homework App (GOAS2)-checkManifestLockResult.txt",
 			);
@@ -360,15 +356,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Homework App (GOAS2)UITests-checkManifestLockResult.txt",
 			);
@@ -382,15 +374,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Homework App (GOAS2)/Pods-Homework App (GOAS2)-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
 			);
@@ -404,15 +392,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Homework App (GOAS2)Tests-checkManifestLockResult.txt",
 			);
@@ -430,7 +414,7 @@
 			files = (
 				A4D3DD8F22488446005EC962 /* Course.swift in Sources */,
 				A493747E2241FDC60062A826 /* AddHomeworkViewController.swift in Sources */,
-				956E158322548542007087E5 /* CustomCell.swift in Sources */,
+				956E158322548542007087E5 /* CalendarCell.swift in Sources */,
 				956E1585225486F7007087E5 /* CalendarViewController.swift in Sources */,
 				A4D3DD89224805F1005EC962 /* AddCourseViewController.swift in Sources */,
 				A4CCED492244906F00476DF5 /* Homework.swift in Sources */,
