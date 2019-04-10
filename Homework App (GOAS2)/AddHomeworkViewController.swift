@@ -83,9 +83,11 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate{
             let className = AddClass.text ?? ""
             let title = AddTitle.text ?? ""
             let dueDay = AddDueDay.text ?? ""
+            let priority = AddPriority.text ?? ""
             let reminder = AddReminder.text ?? ""
+         let others = AddOthers.text ?? ""
             // Set the homework to be passed to HomeworkTableViewController after the unwind segue.
-        homework = Homework(className: className, title: title, dueDay: dueDay, reminder: reminder)
+        homework = Homework(className: className, title: title, dueDay: dueDay, priority: priority, reminder: reminder, others: others)
             
 
     }
