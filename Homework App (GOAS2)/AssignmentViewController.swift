@@ -10,21 +10,30 @@ import UIKit
 
 class AssignmentViewController: UIViewController{
     
+     // MARK:Properties
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var dueDayLabel: UILabel!
+    @IBOutlet weak var priorityLabel: UILabel!
+    @IBOutlet weak var reminderLabel: UILabel!
+    @IBOutlet weak var othersLabel: UILabel!
+    
     var homework: Homework? = nil
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        guard (self.storyboard?.instantiateViewController(withIdentifier: "AssignmentViewController") as? AssignmentViewController) != nil else {
+            return
+        }
+        
         // In here, I can display the homework object
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        titleLabel.text = homework?.title
+        dueDayLabel.text = homework?.dueDay
+        priorityLabel.text = homework?.priority
+        reminderLabel.text = homework?.reminder
+        othersLabel.text = homework?.others
         
     }
 
