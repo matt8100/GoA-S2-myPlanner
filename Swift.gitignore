@@ -21,7 +21,13 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
+<<<<<<< HEAD
 *xcworkspace/xcuserdata/*
+=======
+xcuserdata/
+*xcworkspace/xcuserdata/*
+.DS_Store
+>>>>>>> b96aa4e0ae951db19311b2a22302686ee3cf095d
 
 ## Other
 *.moved-aside
