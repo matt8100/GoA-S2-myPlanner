@@ -16,6 +16,8 @@ class AssignmentViewController: UIViewController{
     @IBOutlet weak var priorityLabel: UILabel!
     @IBOutlet weak var reminderLabel: UILabel!
     @IBOutlet weak var othersLabel: UILabel!
+    @IBOutlet weak var sliderOutlet: UISlider!
+    @IBOutlet weak var completionPercentage: UILabel!
     
     var homework: Homework? = nil
     
@@ -34,9 +36,16 @@ class AssignmentViewController: UIViewController{
         priorityLabel.text = homework?.priority
         reminderLabel.text = homework?.reminder
         othersLabel.text = homework?.others
+        navigationItem.title = homework?.className
         
-    }
+        completionPercentage.text = String(format: "%.0f%%", sliderOutlet.value)
 
+    }
+    //Actions:
+    @IBAction func sliderAction(_ sender: UISlider) {
+        completionPercentage.text = String(format: "%.0f%%", sliderOutlet.value)
+    }
+    
     
     
 

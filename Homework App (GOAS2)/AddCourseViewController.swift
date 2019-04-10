@@ -82,9 +82,14 @@ class AddCourseViewController: UIViewController,UITextFieldDelegate {
             return
         }
         let name = AddCourse.text ?? ""
+        let block = AddBlock.text ?? ""
+        let colour = AddColour.text ?? ""
+        let time = AddTime.text ?? ""
+        let teacher = AddTeacher.text ?? ""
+        let place = AddPlace.text ?? ""
         
         // Set the course to be passed to CourseTableViewController after the unwind segue.
-        course = Course (name: name)
+        course = Course (name: name, block: block, colour: colour, time: time, teacher: teacher, place: place)
 
     }
     

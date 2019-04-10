@@ -13,6 +13,7 @@ class CourseTableViewController: UITableViewController {
     //MARK: Properties
     
     var courses = [Course]()
+    var courseToDisplay: Course? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +51,12 @@ class CourseTableViewController: UITableViewController {
         return cell 
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let course = courses[indexPath.row]
+        courseToDisplay = course
+        performSegue(withIdentifier: "segueTocourseViewing", sender: self)
+    }
+    
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
@@ -67,7 +74,12 @@ class CourseTableViewController: UITableViewController {
         }    
     }
 
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let courseDetailViewController = segue.destination as? CourseDetailViewController {
+            // We get here when we're about go segue to a courseDetailViewController
+            courseDetailViewController.course = courseToDisplay
+        }
+    }
     /*
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
@@ -94,7 +106,7 @@ class CourseTableViewController: UITableViewController {
     */
 
     //MARK: Actions
-    @IBAction func unwindToCourseList(sender: UIStoryboardSegue) {
+    func unwindToCourseList(sender: UIStoryboardSegue) {
         if let sourceViewController = sender.source as? AddCourseViewController, let course = sourceViewController.course {
             // Add a new course.
             let newIndexPath = IndexPath(row: courses.count, section: 0)
@@ -104,17 +116,16 @@ class CourseTableViewController: UITableViewController {
             
         }
     }
-    
+
     //MARK: Private Methods
     private func loadSampleCourses() {
-
-        guard let course1 = Course(name: "Math" ) else {
+        guard let course1 = Course(name: "Math", block:"",colour:"", time:"", teacher:"", place:"") else {
             fatalError("Unable to instantiate course1")
         }
-        guard let course2 = Course(name: "Chemistry") else {
+        guard let course2 = Course(name: "Chemistry", block:"",colour:"", time:"", teacher:"", place:"") else {
             fatalError("Unable to instantiate course2")
         }
-        guard let course3 = Course(name: "Biology") else {
+        guard let course3 = Course(name: "Biology", block:"",colour:"", time:"", teacher:"", place:"") else {
             fatalError("Unable to instantiate course3")
         }
         courses += [course1, course2, course3]
