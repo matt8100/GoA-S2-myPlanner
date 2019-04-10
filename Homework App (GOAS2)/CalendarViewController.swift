@@ -10,6 +10,7 @@ import UIKit
 import JTAppleCalendar
 
 class CalendarViewController: UIViewController {
+    @IBOutlet weak var calendarView: JTAppleCalendarView!
     @IBOutlet weak var year: UILabel!
     @IBOutlet weak var month: UILabel!
     let outsideMonthColor = UIColor(colorWithHexValue: 0xB5B5B5)
@@ -22,22 +23,24 @@ class CalendarViewController: UIViewController {
     }
     func setupCalendarView() {
         calendarView.minimumLineSpacing = 0
-        calendarView.minimumIteritemSpacing = 0
+        calendarView.minimumInteritemSpacing = 0
+        calendarView.visibleDates { visibleDates in
         self.setupViewsOfCalendar(from: visibleDates)
         }
-    func handlCellTextColor(view: JTAppleCell?, cellState: CellState) {
-        guard let validCell = cell as? CalendarCell else { return }
-        if cellState.dateBlongsto == .thisMonth {
+        }
+    func handleCellTextColor(view: JTAppleCell?, cellState: CellState) {
+        guard let validCell = view as? CalendarCell else { return }
+        if cellState.dateBelongsTo == .thisMonth {
             validCell.dateLabel.textColor = monthColor
         } else {
-            validcCell.dateLabel.textColor = outsideMonthColor
+            validCell.dateLabel.textColor = outsideMonthColor
         }
     }
     func setupViewsOfCalendar(from visibleDates: DateSegmentInfo) {
-        let date = visibleDates.monthdates.first!.date
+        let date = visibleDates.monthDates.first!.date
         self.formatter.dateFormat = "yyyy"
         self.year.text = self.formatter.string(from: date)
-        self.formatter.dataFormat = "MMMM"
+        self.formatter.dateFormat = "MMMM"
         self.month.text = self.formatter.string(from: date)
     }
     override func didReceiveMemoryWarning() {
@@ -55,7 +58,7 @@ class CalendarViewController: UIViewController {
  }
  */
 
-extension CalendarViewController: JTAppleCalendarViewDelegate, JTAppleCalendarViewDataSource {
+extension CalendarViewController: JTAppleCalendarViewDataSource {
     // Sets calendar parameters
     func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
         formatter.dateFormat = "yyyy MM dd"

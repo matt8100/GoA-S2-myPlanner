@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VV4-89-QbW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VV4-89-QbW">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -391,7 +391,7 @@
                                             <constraint firstAttribute="height" constant="20.5" id="GAe-my-9ab"/>
                                         </constraints>
                                     </stackView>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dT8-fv-Q3s" customClass="JTAppleCalendarView" customModule="JTAppleCalendar">
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dT8-fv-Q3s" userLabel="CalendarView" customClass="JTAppleCalendarView" customModule="JTAppleCalendar">
                                         <rect key="frame" x="0.0" y="70.5" width="375" height="325"/>
                                         <color key="backgroundColor" red="0.93725490196078431" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -412,7 +412,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rJi-pj-NZj">
-                                                            <rect key="frame" x="37" y="42" width="40" height="40"/>
+                                                            <rect key="frame" x="37.5" y="33.5" width="40" height="40"/>
                                                             <color key="backgroundColor" red="0.94901960784313721" green="0.78823529411764703" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="40" id="7Ws-Sk-ywu"/>
@@ -425,7 +425,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3z1-1L-YBZ">
-                                                            <rect key="frame" x="36.5" y="51.5" width="42" height="21"/>
+                                                            <rect key="frame" x="36.5" y="43" width="42" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -465,6 +465,7 @@
                     <tabBarItem key="tabBarItem" title="Calendar" id="TTI-Ly-Qx8"/>
                     <connections>
                         <outlet property="CalendarView" destination="dT8-fv-Q3s" id="37v-LY-GaR"/>
+                        <outlet property="calendarView" destination="dT8-fv-Q3s" id="kZb-JT-z4b"/>
                         <outlet property="month" destination="oLa-1m-xFB" id="9sl-zh-7IV"/>
                         <outlet property="year" destination="3L1-kb-4uB" id="URk-tq-nni"/>
                     </connections>
@@ -772,8 +773,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CourseIcon" width="20" height="20"/>
-        <image name="ScheduleIcon" width="20" height="20"/>
-        <image name="SettingIcon" width="20" height="20"/>
+        <image name="CourseIcon" width="40" height="40"/>
+        <image name="ScheduleIcon" width="40" height="40"/>
+        <image name="SettingIcon" width="40" height="40"/>
     </resources>
 </document>
