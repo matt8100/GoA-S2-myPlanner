@@ -391,7 +391,7 @@
                                             <constraint firstAttribute="height" constant="20.5" id="GAe-my-9ab"/>
                                         </constraints>
                                     </stackView>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dT8-fv-Q3s" userLabel="CalendarView" customClass="JTAppleCalendarView" customModule="JTAppleCalendar">
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dT8-fv-Q3s" customClass="JTAppleCalendarView" customModule="JTAppleCalendar">
                                         <rect key="frame" x="0.0" y="70.5" width="375" height="325"/>
                                         <color key="backgroundColor" red="0.93725490196078431" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -404,7 +404,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="CalendarCell" id="eod-E0-dm9" customClass="CalendarCell">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="CalendarCell" id="eod-E0-dm9" customClass="CalendarCell" customModule="Homework_App__GOAS2_" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -425,7 +425,10 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3z1-1L-YBZ">
-                                                            <rect key="frame" x="36.5" y="43" width="42" height="21"/>
+                                                            <rect key="frame" x="36.5" y="43.5" width="42" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="NFU-Qm-Wif"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -433,13 +436,14 @@
                                                     </subviews>
                                                 </view>
                                                 <constraints>
-                                                    <constraint firstItem="3z1-1L-YBZ" firstAttribute="centerX" secondItem="eod-E0-dm9" secondAttribute="centerX" id="8Vg-nz-okx"/>
-                                                    <constraint firstItem="rJi-pj-NZj" firstAttribute="centerX" secondItem="eod-E0-dm9" secondAttribute="centerX" id="jPb-LF-CcZ"/>
-                                                    <constraint firstItem="3z1-1L-YBZ" firstAttribute="centerY" secondItem="eod-E0-dm9" secondAttribute="centerY" id="m5p-ex-PLO"/>
-                                                    <constraint firstItem="rJi-pj-NZj" firstAttribute="centerY" secondItem="eod-E0-dm9" secondAttribute="centerY" id="mRC-Zc-KBA"/>
+                                                    <constraint firstItem="3z1-1L-YBZ" firstAttribute="centerX" secondItem="eod-E0-dm9" secondAttribute="centerX" id="Tbs-vy-Oep"/>
+                                                    <constraint firstItem="rJi-pj-NZj" firstAttribute="centerY" secondItem="eod-E0-dm9" secondAttribute="centerY" id="dyS-QF-Q9v"/>
+                                                    <constraint firstItem="3z1-1L-YBZ" firstAttribute="centerY" secondItem="eod-E0-dm9" secondAttribute="centerY" id="fc2-xm-BZB"/>
+                                                    <constraint firstItem="rJi-pj-NZj" firstAttribute="centerX" secondItem="eod-E0-dm9" secondAttribute="centerX" id="tYw-R6-P0B"/>
                                                 </constraints>
                                                 <connections>
                                                     <outlet property="dateLabel" destination="3z1-1L-YBZ" id="8lJ-H1-M91"/>
+                                                    <outlet property="selectedView" destination="rJi-pj-NZj" id="XpX-dZ-bVu"/>
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
@@ -464,7 +468,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Calendar" id="TTI-Ly-Qx8"/>
                     <connections>
-                        <outlet property="CalendarView" destination="dT8-fv-Q3s" id="37v-LY-GaR"/>
                         <outlet property="calendarView" destination="dT8-fv-Q3s" id="kZb-JT-z4b"/>
                         <outlet property="month" destination="oLa-1m-xFB" id="9sl-zh-7IV"/>
                         <outlet property="year" destination="3L1-kb-4uB" id="URk-tq-nni"/>
