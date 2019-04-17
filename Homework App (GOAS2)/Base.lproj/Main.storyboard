@@ -635,7 +635,6 @@
                         <outlet property="AddDueDay" destination="zDx-dq-EpG" id="BXH-gM-QoV"/>
                         <outlet property="AddOthers" destination="bPt-lS-Z9h" id="UdT-k5-aZT"/>
                         <outlet property="AddPriority" destination="DS0-dJ-pUx" id="NCV-EB-0ZS"/>
-                        <outlet property="AddReminder" destination="FSL-85-nMo" id="nrx-aj-iww"/>
                         <outlet property="AddTitle" destination="69j-WG-Bto" id="ivg-aq-mYL"/>
                         <outlet property="saveButton" destination="ZYQ-ug-TCG" id="NCJ-II-OqH"/>
                     </connections>
