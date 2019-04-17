@@ -37,13 +37,13 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate{
         //Luke screwed around here
         dateFormat.dateStyle = DateFormatter.Style.short
         dateFormat.timeStyle = DateFormatter.Style.short
-        datePicker.datePickerMode = UIDatePickerMode.dateAndTime
-        datePicker.addTarget(self, action: Selector(("updateDateField")), for:UIControlEvents.valueChanged)
+        datePicker.datePickerMode = UIDatePicker.Mode.dateAndTime
+        datePicker.addTarget(self, action: Selector(("updateDateField")), for:UIControl.Event.valueChanged)
         AddDueDay.inputView = datePicker
         dateFormat2.dateStyle = DateFormatter.Style.short
         dateFormat2.timeStyle = DateFormatter.Style.short
-        datePicker2.datePickerMode = UIDatePickerMode.dateAndTime
-        datePicker2.addTarget(self, action: Selector(("updateDateField")), for: UIControlEvents.valueChanged)
+        datePicker2.datePickerMode = UIDatePicker.Mode.dateAndTime
+        datePicker2.addTarget(self, action: Selector(("updateDateField")), for: UIControl.Event.valueChanged)
         AddReminder.inputView = datePicker2
         
         func viewWillAppear(animated: Bool) {
