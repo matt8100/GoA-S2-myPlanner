@@ -13,6 +13,7 @@ class HomeworkTableViewController: UITableViewController {
     //MARK: Properties
     
     var homeworks = [Homework]()
+    var homeworkToDisplay: Homework? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,14 +45,21 @@ class HomeworkTableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? HomeworkTableViewCell  else {
             fatalError("The dequeued cell is not an instance of HomeworkTableViewCell.")
         }
-        // Fetches the appropriate meal for the data source layout.
+        // Fetches the appropriate homework for the data source layout.
         let homework = homeworks[indexPath.row]
+
         
         cell.ClassNameLabel.text = homework.className
         cell.TitleLabel.text = homework.title
         cell.DueDayLabel.text = homework.dueDay
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let homework = homeworks[indexPath.row]
+        homeworkToDisplay = homework
+        performSegue(withIdentifier: "segueToHomeworkViewing", sender: self)
     }
     
     // Override to support conditional editing of the table view.
@@ -71,7 +79,13 @@ class HomeworkTableViewController: UITableViewController {
         }    
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let assignmentViewController = segue.destination as? AssignmentViewController {
+            // We get here when we're about go segue to a AssignmentViewController
+            assignmentViewController.homework = homeworkToDisplay
+        }
+    }
+    
     /*
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
@@ -111,6 +125,7 @@ class HomeworkTableViewController: UITableViewController {
     
     //Mark: Private Function
     private func loadSampleHomeworks() {
+<<<<<<< HEAD
         guard let homework1 = Homework(className: "Math", title: "Pre-calculus 12", dueDay: "Mar 20", reminder: <#String#>) else {
             fatalError("Unable to instantiate homework1")
         }
@@ -118,6 +133,15 @@ class HomeworkTableViewController: UITableViewController {
             fatalError("Unable to instantiate homework2")
         }
         guard let homework3 = Homework(className: "Biology", title: "Protist Test", dueDay: "Apr 3", reminder: <#String#>) else {
+=======
+        guard let homework1 = Homework(className: "Math", title: "Pre-calculus 12", dueDay: "May 20", priority: "high", reminder:"Two days before",others:"Test coming soon") else {
+            fatalError("Unable to instantiate homework1")
+        }
+        guard let homework2 = Homework(className: "Chemistry", title: "Lab 11", dueDay: "May 26",priority: "Medium", reminder:"One week before",others:"") else {
+            fatalError("Unable to instantiate homework2")
+        }
+        guard let homework3 = Homework(className: "Biology", title: "Protist Test", dueDay: "Apr 23", priority: "Low", reminder:"One day before",others:"Test in three weeks") else {
+>>>>>>> 7c615a6cf641f82214bd71aa7486ea114e37f298
             fatalError("Unable to instantiate homework3")
         }
         homeworks += [homework1, homework2, homework3]

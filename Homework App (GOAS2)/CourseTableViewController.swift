@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import Hue
 
 class CourseTableViewController: UITableViewController {
 
     //MARK: Properties
     
     var courses = [Course]()
+    var courseToDisplay: Course? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,10 +48,17 @@ class CourseTableViewController: UITableViewController {
         let course = courses[indexPath.row]
 
         cell.nameLabel.text = course.name
-            
+        cell.backgroundColor = course.colour
+      
         return cell 
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let course = courses[indexPath.row]
+        courseToDisplay = course
+        performSegue(withIdentifier: "segueTocourseViewing", sender: self)
+    }
+    
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
@@ -67,7 +76,12 @@ class CourseTableViewController: UITableViewController {
         }    
     }
 
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let courseDetailViewController = segue.destination as? CourseDetailViewController {
+            // We get here when we're about go segue to a courseDetailViewController
+            courseDetailViewController.course = courseToDisplay
+        }
+    }
     /*
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
@@ -94,7 +108,7 @@ class CourseTableViewController: UITableViewController {
     */
 
     //MARK: Actions
-    @IBAction func unwindToCourseList(sender: UIStoryboardSegue) {
+    func unwindToCourseList(sender: UIStoryboardSegue) {
         if let sourceViewController = sender.source as? AddCourseViewController, let course = sourceViewController.course {
             // Add a new course.
             let newIndexPath = IndexPath(row: courses.count, section: 0)
@@ -104,17 +118,16 @@ class CourseTableViewController: UITableViewController {
             
         }
     }
-    
+
     //MARK: Private Methods
     private func loadSampleCourses() {
-
-        guard let course1 = Course(name: "Math") else {
+        guard let course1 = Course(name: "Math", block:"1-1", colour: UIColor(hex: "#EB5757"),time:"9:00 - 10:30", teacher:"Ms. Gilmer", place:"B202") else {
             fatalError("Unable to instantiate course1")
         }
-        guard let course2 = Course(name: "Chemistry") else {
+        guard let course2 = Course(name: "Chemistry", block:"1-2",colour:UIColor(hex: "#F2994A"), time:"10:40 - 12:00", teacher:"Mr. Ryan", place:"B203") else {
             fatalError("Unable to instantiate course2")
         }
-        guard let course3 = Course(name: "Biology") else {
+        guard let course3 = Course(name: "Biology", block:"2-3",colour:UIColor(hex: "#27AE60"), time:"1:00 - 2:30", teacher:"Ms. Perry", place:"C104") else {
             fatalError("Unable to instantiate course3")
         }
         courses += [course1, course2, course3]
