@@ -881,8 +881,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Block" width="24" height="24"/>
         <image name="CourseIcon" width="40" height="40"/>
+        <image name="Place" width="24" height="24"/>
         <image name="ScheduleIcon" width="40" height="40"/>
         <image name="SettingIcon" width="40" height="40"/>
+        <image name="Time" width="23" height="23"/>
+        <image name="teacher" width="24" height="24"/>
     </resources>
 </document>
