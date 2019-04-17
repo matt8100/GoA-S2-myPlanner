@@ -20,7 +20,8 @@ class HomeworkTableViewController: UITableViewController {
 
         // Use the edit button item provided by the table view controller.
         navigationItem.leftBarButtonItem = editButtonItem
-        self.navigationItem.leftBarButtonItem?.tintColor = UIColor.blue;
+        self.navigationItem.leftBarButtonItem?.tintColor = UIColor.black;
+        
         
         // Load the sample data.
         loadSampleHomeworks()

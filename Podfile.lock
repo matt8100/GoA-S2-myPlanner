@@ -1,28 +1,20 @@
 PODS:
   - Hue (4.0.0)
-  - IGColorPicker (0.4.2):
-    - M13Checkbox (~> 3.2.0)
   - JTAppleCalendar (7.1.7)
-  - M13Checkbox (3.2.2)
 
 DEPENDENCIES:
   - Hue
-  - IGColorPicker
   - JTAppleCalendar
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Hue
-    - IGColorPicker
     - JTAppleCalendar
-    - M13Checkbox
 
 SPEC CHECKSUMS:
   Hue: afe18b4e819e2848e7d2d5b4b33f4d3f88dd921b
-  IGColorPicker: c6d43aa386a9fdc8f958f3bd4e5ab85905242c8a
   JTAppleCalendar: 96da4d8388fa6dc82d6a60d41ef36a015e167e2f
-  M13Checkbox: a8c2491cfbbca10797925fd0b9154a782bf40d89
 
-PODFILE CHECKSUM: 49d84240a3ec461d057480004023a743cc9ddf1a
+PODFILE CHECKSUM: 89889c4fc0d61e904cdcf5381bfe9542d287d928
 
 COCOAPODS: 1.6.1

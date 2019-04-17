@@ -5,7 +5,6 @@ use_frameworks!
   # Pods for Homework App (GOAS2)
 pod 'JTAppleCalendar'
 pod 'Hue'
-pod 'IGColorPicker'
 
 
 

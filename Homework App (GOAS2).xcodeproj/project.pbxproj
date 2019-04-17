@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F7D8B37D2DF372CE5D1496A /* Pods_Homework_App__GOAS2_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4207A8DD388ED4885B192E47 /* Pods_Homework_App__GOAS2_.framework */; };
-		4EA99AF60CFBF9FF740783BB /* Pods_Homework_App__GOAS2_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127DA48B32C7B080006D2290 /* Pods_Homework_App__GOAS2_Tests.framework */; };
+		48D44ADD27AFF8F4DFF276A0 /* Pods_Homework_App__GOAS2_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2723ECDB3C6C6B2EBE22E0 /* Pods_Homework_App__GOAS2_Tests.framework */; };
 		956E158322548542007087E5 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E158222548542007087E5 /* CalendarCell.swift */; };
 		956E1585225486F7007087E5 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E1584225486F7007087E5 /* CalendarViewController.swift */; };
 		A41D024222544DDB00D6B5F9 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D024122544DDB00D6B5F9 /* SettingTableViewController.swift */; };
@@ -29,7 +28,8 @@
 		A4D3DD8B2248060B005EC962 /* CourseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D3DD8A2248060B005EC962 /* CourseTableViewController.swift */; };
 		A4D3DD8D2248061E005EC962 /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D3DD8C2248061E005EC962 /* CourseTableViewCell.swift */; };
 		A4D3DD8F22488446005EC962 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D3DD8E22488446005EC962 /* Course.swift */; };
-		A8ECC2DD6E014A66F0D753EB /* Pods_Homework_App__GOAS2_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA2B6001EAC14FF6C85DCD6 /* Pods_Homework_App__GOAS2_UITests.framework */; };
+		C99B4A4FDAD6BE40D0C1E4FA /* Pods_Homework_App__GOAS2_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A937D5679B261FF8A9B0C11 /* Pods_Homework_App__GOAS2_.framework */; };
+		CFDD86A0DC97074A2E2A1070 /* Pods_Homework_App__GOAS2_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01706FB3AFA8BB0AC4FA972F /* Pods_Homework_App__GOAS2_UITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,13 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		127DA48B32C7B080006D2290 /* Pods_Homework_App__GOAS2_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework_App__GOAS2_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1359F0EEC5102203F1AE951A /* Pods-Homework App (GOAS2).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2).debug.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)/Pods-Homework App (GOAS2).debug.xcconfig"; sourceTree = "<group>"; };
-		4207A8DD388ED4885B192E47 /* Pods_Homework_App__GOAS2_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework_App__GOAS2_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		441A4E509E5E4593CA7BEDCB /* Pods-Homework App (GOAS2)UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2)UITests.debug.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)UITests/Pods-Homework App (GOAS2)UITests.debug.xcconfig"; sourceTree = "<group>"; };
-		4CD05B41611AF0C62A54D364 /* Pods-Homework App (GOAS2).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2).release.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)/Pods-Homework App (GOAS2).release.xcconfig"; sourceTree = "<group>"; };
-		5AA2B6001EAC14FF6C85DCD6 /* Pods_Homework_App__GOAS2_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework_App__GOAS2_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93E321EADB8BE39D4CB404DA /* Pods-Homework App (GOAS2)UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2)UITests.release.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)UITests/Pods-Homework App (GOAS2)UITests.release.xcconfig"; sourceTree = "<group>"; };
+		01706FB3AFA8BB0AC4FA972F /* Pods_Homework_App__GOAS2_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework_App__GOAS2_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FF1126E5CC110CE7A688040 /* Pods-Homework App (GOAS2)Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2)Tests.release.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)Tests/Pods-Homework App (GOAS2)Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3A1FDA0DFA2EC2C531355AF7 /* Pods-Homework App (GOAS2)UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2)UITests.release.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)UITests/Pods-Homework App (GOAS2)UITests.release.xcconfig"; sourceTree = "<group>"; };
+		86A5903041B3A39E583CDE26 /* Pods-Homework App (GOAS2).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2).release.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)/Pods-Homework App (GOAS2).release.xcconfig"; sourceTree = "<group>"; };
+		8A937D5679B261FF8A9B0C11 /* Pods_Homework_App__GOAS2_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework_App__GOAS2_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DC76FB34EFB9945EE95C07F /* Pods-Homework App (GOAS2)Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2)Tests.debug.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)Tests/Pods-Homework App (GOAS2)Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		956E158222548542007087E5 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		956E1584225486F7007087E5 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		A41D024122544DDB00D6B5F9 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
@@ -83,8 +82,9 @@
 		A4D3DD8A2248060B005EC962 /* CourseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewController.swift; sourceTree = "<group>"; };
 		A4D3DD8C2248061E005EC962 /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
 		A4D3DD8E22488446005EC962 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
-		B2F846B166E24C5B247E72F3 /* Pods-Homework App (GOAS2)Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2)Tests.release.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)Tests/Pods-Homework App (GOAS2)Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F5128C1B9E04D0093AB2DE60 /* Pods-Homework App (GOAS2)Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2)Tests.debug.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)Tests/Pods-Homework App (GOAS2)Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9F55BF410101F20A542AD58 /* Pods-Homework App (GOAS2).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2).debug.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)/Pods-Homework App (GOAS2).debug.xcconfig"; sourceTree = "<group>"; };
+		CF2723ECDB3C6C6B2EBE22E0 /* Pods_Homework_App__GOAS2_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework_App__GOAS2_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE9E34BE55EE81F83489C833 /* Pods-Homework App (GOAS2)UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2)UITests.debug.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)UITests/Pods-Homework App (GOAS2)UITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F7D8B37D2DF372CE5D1496A /* Pods_Homework_App__GOAS2_.framework in Frameworks */,
+				C99B4A4FDAD6BE40D0C1E4FA /* Pods_Homework_App__GOAS2_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EA99AF60CFBF9FF740783BB /* Pods_Homework_App__GOAS2_Tests.framework in Frameworks */,
+				48D44ADD27AFF8F4DFF276A0 /* Pods_Homework_App__GOAS2_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,13 +108,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8ECC2DD6E014A66F0D753EB /* Pods_Homework_App__GOAS2_UITests.framework in Frameworks */,
+				CFDD86A0DC97074A2E2A1070 /* Pods_Homework_App__GOAS2_UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D3F28BF439313F39BC5F345 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A937D5679B261FF8A9B0C11 /* Pods_Homework_App__GOAS2_.framework */,
+				CF2723ECDB3C6C6B2EBE22E0 /* Pods_Homework_App__GOAS2_Tests.framework */,
+				01706FB3AFA8BB0AC4FA972F /* Pods_Homework_App__GOAS2_UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A493746F2241FDC50062A826 = {
 			isa = PBXGroup;
 			children = (
@@ -123,7 +133,7 @@
 				A493749A2241FDCF0062A826 /* Homework App (GOAS2)UITests */,
 				A49374792241FDC60062A826 /* Products */,
 				CA70B64BAA4A220716E110E1 /* Pods */,
-				B3557DF8A7AAC3EFE83DAD1A /* Frameworks */,
+				2D3F28BF439313F39BC5F345 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,25 +191,15 @@
 			path = "Homework App (GOAS2)UITests";
 			sourceTree = "<group>";
 		};
-		B3557DF8A7AAC3EFE83DAD1A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4207A8DD388ED4885B192E47 /* Pods_Homework_App__GOAS2_.framework */,
-				127DA48B32C7B080006D2290 /* Pods_Homework_App__GOAS2_Tests.framework */,
-				5AA2B6001EAC14FF6C85DCD6 /* Pods_Homework_App__GOAS2_UITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		CA70B64BAA4A220716E110E1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1359F0EEC5102203F1AE951A /* Pods-Homework App (GOAS2).debug.xcconfig */,
-				4CD05B41611AF0C62A54D364 /* Pods-Homework App (GOAS2).release.xcconfig */,
-				F5128C1B9E04D0093AB2DE60 /* Pods-Homework App (GOAS2)Tests.debug.xcconfig */,
-				B2F846B166E24C5B247E72F3 /* Pods-Homework App (GOAS2)Tests.release.xcconfig */,
-				441A4E509E5E4593CA7BEDCB /* Pods-Homework App (GOAS2)UITests.debug.xcconfig */,
-				93E321EADB8BE39D4CB404DA /* Pods-Homework App (GOAS2)UITests.release.xcconfig */,
+				A9F55BF410101F20A542AD58 /* Pods-Homework App (GOAS2).debug.xcconfig */,
+				86A5903041B3A39E583CDE26 /* Pods-Homework App (GOAS2).release.xcconfig */,
+				8DC76FB34EFB9945EE95C07F /* Pods-Homework App (GOAS2)Tests.debug.xcconfig */,
+				1FF1126E5CC110CE7A688040 /* Pods-Homework App (GOAS2)Tests.release.xcconfig */,
+				EE9E34BE55EE81F83489C833 /* Pods-Homework App (GOAS2)UITests.debug.xcconfig */,
+				3A1FDA0DFA2EC2C531355AF7 /* Pods-Homework App (GOAS2)UITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -211,11 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A49374A02241FDCF0062A826 /* Build configuration list for PBXNativeTarget "Homework App (GOAS2)" */;
 			buildPhases = (
-				2D263A7B61799981CAFB4E92 /* [CP] Check Pods Manifest.lock */,
+				A0430835DEC36CB33A5599BF /* [CP] Check Pods Manifest.lock */,
 				A49374742241FDC60062A826 /* Sources */,
 				A49374752241FDC60062A826 /* Frameworks */,
 				A49374762241FDC60062A826 /* Resources */,
-				53355C8C0E94FCF7F5AE5C3E /* [CP] Embed Pods Frameworks */,
+				3BE1B621B5BAC276805D0C1C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,7 +230,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A49374A32241FDCF0062A826 /* Build configuration list for PBXNativeTarget "Homework App (GOAS2)Tests" */;
 			buildPhases = (
-				67428E8CB7796568572239B8 /* [CP] Check Pods Manifest.lock */,
+				1DE60113B9E31073E9A5AC55 /* [CP] Check Pods Manifest.lock */,
 				A49374882241FDCF0062A826 /* Sources */,
 				A49374892241FDCF0062A826 /* Frameworks */,
 				A493748A2241FDCF0062A826 /* Resources */,
@@ -249,7 +249,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A49374A62241FDCF0062A826 /* Build configuration list for PBXNativeTarget "Homework App (GOAS2)UITests" */;
 			buildPhases = (
-				3813F61AA703DC59E179183F /* [CP] Check Pods Manifest.lock */,
+				DB9C9FC9C99379C6EC1C58D6 /* [CP] Check Pods Manifest.lock */,
 				A49374932241FDCF0062A826 /* Sources */,
 				A49374942241FDCF0062A826 /* Frameworks */,
 				A49374952241FDCF0062A826 /* Resources */,
@@ -336,16 +336,66 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2D263A7B61799981CAFB4E92 /* [CP] Check Pods Manifest.lock */ = {
+		1DE60113B9E31073E9A5AC55 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Homework App (GOAS2)Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BE1B621B5BAC276805D0C1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Homework App (GOAS2)/Pods-Homework App (GOAS2)-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Homework App (GOAS2)/Pods-Homework App (GOAS2)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0430835DEC36CB33A5599BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Homework App (GOAS2)-checkManifestLockResult.txt",
 			);
@@ -354,60 +404,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3813F61AA703DC59E179183F /* [CP] Check Pods Manifest.lock */ = {
+		DB9C9FC9C99379C6EC1C58D6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Homework App (GOAS2)UITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		53355C8C0E94FCF7F5AE5C3E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Homework App (GOAS2)/Pods-Homework App (GOAS2)-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
-				"${BUILT_PRODUCTS_DIR}/IGColorPicker/IGColorPicker.framework",
-				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
-				"${BUILT_PRODUCTS_DIR}/M13Checkbox/M13Checkbox.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGColorPicker.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/M13Checkbox.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Homework App (GOAS2)/Pods-Homework App (GOAS2)-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		67428E8CB7796568572239B8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Homework App (GOAS2)Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -608,7 +620,7 @@
 		};
 		A49374A12241FDCF0062A826 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1359F0EEC5102203F1AE951A /* Pods-Homework App (GOAS2).debug.xcconfig */;
+			baseConfigurationReference = A9F55BF410101F20A542AD58 /* Pods-Homework App (GOAS2).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -630,7 +642,7 @@
 		};
 		A49374A22241FDCF0062A826 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CD05B41611AF0C62A54D364 /* Pods-Homework App (GOAS2).release.xcconfig */;
+			baseConfigurationReference = 86A5903041B3A39E583CDE26 /* Pods-Homework App (GOAS2).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -650,7 +662,7 @@
 		};
 		A49374A42241FDCF0062A826 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5128C1B9E04D0093AB2DE60 /* Pods-Homework App (GOAS2)Tests.debug.xcconfig */;
+			baseConfigurationReference = 8DC76FB34EFB9945EE95C07F /* Pods-Homework App (GOAS2)Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -672,7 +684,7 @@
 		};
 		A49374A52241FDCF0062A826 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2F846B166E24C5B247E72F3 /* Pods-Homework App (GOAS2)Tests.release.xcconfig */;
+			baseConfigurationReference = 1FF1126E5CC110CE7A688040 /* Pods-Homework App (GOAS2)Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -694,7 +706,7 @@
 		};
 		A49374A72241FDCF0062A826 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 441A4E509E5E4593CA7BEDCB /* Pods-Homework App (GOAS2)UITests.debug.xcconfig */;
+			baseConfigurationReference = EE9E34BE55EE81F83489C833 /* Pods-Homework App (GOAS2)UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -715,7 +727,7 @@
 		};
 		A49374A82241FDCF0062A826 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93E321EADB8BE39D4CB404DA /* Pods-Homework App (GOAS2)UITests.release.xcconfig */;
+			baseConfigurationReference = 3A1FDA0DFA2EC2C531355AF7 /* Pods-Homework App (GOAS2)UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
