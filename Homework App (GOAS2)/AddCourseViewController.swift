@@ -83,7 +83,7 @@ class AddCourseViewController: UIViewController,UITextFieldDelegate {
         }
         let name = AddCourse.text ?? ""
         let block = AddBlock.text ?? ""
-        let colour = AddColour.text ?? ""
+        let colour = AddColour.textColor
         let time = AddTime.text ?? ""
         let teacher = AddTeacher.text ?? ""
         let place = AddPlace.text ?? ""

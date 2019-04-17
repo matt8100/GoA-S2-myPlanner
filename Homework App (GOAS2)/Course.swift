@@ -12,12 +12,12 @@ import UIKit
 class Course{
     var name: String
     var block: String?
-    var colour: String?
+    var colour: UIColor?
     var time: String?
     var teacher: String?
     var place: String?
     
-    init?(name: String,block: String?,colour: String?, time: String?, teacher: String?, place: String?){
+    init?(name: String,block: String?,colour: UIColor?, time: String?, teacher: String?, place: String?){
         
         // The name must not be empty
         guard !name.isEmpty else {

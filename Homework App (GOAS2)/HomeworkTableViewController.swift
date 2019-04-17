@@ -45,8 +45,9 @@ class HomeworkTableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? HomeworkTableViewCell  else {
             fatalError("The dequeued cell is not an instance of HomeworkTableViewCell.")
         }
-        // Fetches the appropriate meal for the data source layout.
+        // Fetches the appropriate homework for the data source layout.
         let homework = homeworks[indexPath.row]
+
         
         cell.ClassNameLabel.text = homework.className
         cell.TitleLabel.text = homework.title
@@ -124,13 +125,13 @@ class HomeworkTableViewController: UITableViewController {
     
     //Mark: Private Function
     private func loadSampleHomeworks() {
-        guard let homework1 = Homework(className: "Math", title: "Pre-calculus 12", dueDay: "Mar 20", priority: "", reminder:"",others:"") else {
+        guard let homework1 = Homework(className: "Math", title: "Pre-calculus 12", dueDay: "May 20", priority: "high", reminder:"Two days before",others:"Test coming soon") else {
             fatalError("Unable to instantiate homework1")
         }
-        guard let homework2 = Homework(className: "Chemistry", title: "Lab 11", dueDay: "Mar 26",priority: "", reminder:"",others:"") else {
+        guard let homework2 = Homework(className: "Chemistry", title: "Lab 11", dueDay: "May 26",priority: "Medium", reminder:"One week before",others:"") else {
             fatalError("Unable to instantiate homework2")
         }
-        guard let homework3 = Homework(className: "Biology", title: "Protist Test", dueDay: "Apr 3", priority: "", reminder:"",others:"") else {
+        guard let homework3 = Homework(className: "Biology", title: "Protist Test", dueDay: "Apr 23", priority: "Low", reminder:"One day before",others:"Test in three weeks") else {
             fatalError("Unable to instantiate homework3")
         }
         homeworks += [homework1, homework2, homework3]
