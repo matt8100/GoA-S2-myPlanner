@@ -124,13 +124,13 @@ class HomeworkTableViewController: UITableViewController {
     
     //Mark: Private Function
     private func loadSampleHomeworks() {
-        guard let homework1 = Homework(className: "Math", title: "Pre-calculus 12", dueDay: "May 20", priority: "high", reminder: "test",others:"Test coming soon") else {
+        guard let homework1 = Homework(className: "Math", title: "Pre-calculus 12", dueDay: "May 20", priority: "high", others:"Test coming soon") else {
             fatalError("Unable to instantiate homework1")
         }
-        guard let homework2 = Homework(className: "Chemistry", title: "Lab 11", dueDay: "May 26",priority: "Medium", reminder: "test",others:"") else {
+        guard let homework2 = Homework(className: "Chemistry", title: "Lab 11", dueDay: "May 26",priority: "Medium", others:"") else {
             fatalError("Unable to instantiate homework2")
         }
-        guard let homework3 = Homework(className: "Biology", title: "Protist Test", dueDay: "Apr 23", priority: "Low", reminder: "test",others:"Test in three weeks") else {
+        guard let homework3 = Homework(className: "Biology", title: "Protist Test", dueDay: "Apr 23", priority: "Low",others:"Test in three weeks") else {
             fatalError("Unable to instantiate homework3")
         }
         homeworks += [homework1, homework2, homework3]
