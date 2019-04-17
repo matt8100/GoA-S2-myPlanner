@@ -61,7 +61,7 @@ class HomeworkTableViewController: UITableViewController {
     }
    
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.editingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
              // Delete the row from the data source
             homeworks.remove(at: indexPath.row)
@@ -111,13 +111,13 @@ class HomeworkTableViewController: UITableViewController {
     
     //Mark: Private Function
     private func loadSampleHomeworks() {
-        guard let homework1 = Homework(className: "Math", title: "Pre-calculus 12", dueDay: "Mar 20") else {
+        guard let homework1 = Homework(className: "Math", title: "Pre-calculus 12", dueDay: "Mar 20", reminder: <#String#>) else {
             fatalError("Unable to instantiate homework1")
         }
-        guard let homework2 = Homework(className: "Chemistry", title: "Lab 11", dueDay: "Mar 26") else {
+        guard let homework2 = Homework(className: "Chemistry", title: "Lab 11", dueDay: "Mar 26", reminder: <#String#>) else {
             fatalError("Unable to instantiate homework2")
         }
-        guard let homework3 = Homework(className: "Biology", title: "Protist Test", dueDay: "Apr 3") else {
+        guard let homework3 = Homework(className: "Biology", title: "Protist Test", dueDay: "Apr 3", reminder: <#String#>) else {
             fatalError("Unable to instantiate homework3")
         }
         homeworks += [homework1, homework2, homework3]

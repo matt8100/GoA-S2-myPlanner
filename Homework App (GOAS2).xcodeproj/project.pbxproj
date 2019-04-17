@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FF774452266BC75007047EE /* ReminderFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF774442266BC75007047EE /* ReminderFunction.swift */; };
 		A493747C2241FDC60062A826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A493747B2241FDC60062A826 /* AppDelegate.swift */; };
 		A493747E2241FDC60062A826 /* AddHomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A493747D2241FDC60062A826 /* AddHomeworkViewController.swift */; };
 		A49374812241FDC60062A826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A493747F2241FDC60062A826 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3FF774442266BC75007047EE /* ReminderFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderFunction.swift; sourceTree = "<group>"; };
 		A49374782241FDC60062A826 /* Homework App (GOAS2).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework App (GOAS2).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A493747B2241FDC60062A826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A493747D2241FDC60062A826 /* AddHomeworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHomeworkViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				A4CCED4622448EC100476DF5 /* HomeworkTableViewCell.swift */,
 				A4CCED4A2244B59A00476DF5 /* HomeworkTableViewController.swift */,
 				A4CCED482244906F00476DF5 /* Homework.swift */,
+				3FF774442266BC75007047EE /* ReminderFunction.swift */,
 				A4D3DD8E22488446005EC962 /* Course.swift */,
 				A49374822241FDCE0062A826 /* Assets.xcassets */,
 				A49374842241FDCE0062A826 /* LaunchScreen.storyboard */,
@@ -286,6 +289,7 @@
 				A4CCED4B2244B59A00476DF5 /* HomeworkTableViewController.swift in Sources */,
 				A4D3DD8B2248060B005EC962 /* CourseTableViewController.swift in Sources */,
 				A493747C2241FDC60062A826 /* AppDelegate.swift in Sources */,
+				3FF774452266BC75007047EE /* ReminderFunction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

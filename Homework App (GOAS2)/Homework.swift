@@ -14,8 +14,10 @@ class Homework {
     var className: String
     var title: String
     var dueDay: String
+    var reminder: String?
     
-    init?(className: String, title: String, dueDay: String){
+    
+    init?(className: String, title: String, dueDay: String, reminder: String?){
         
         // The name must not be empty
         guard !className.isEmpty else {
@@ -32,6 +34,7 @@ class Homework {
         self.className = className
         self.title = title
         self.dueDay = dueDay
+        self.reminder = reminder
         
     }
 }

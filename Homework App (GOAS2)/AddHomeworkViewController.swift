@@ -16,6 +16,10 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate{
     @IBOutlet weak var AddTitle: UITextField!
     @IBOutlet weak var AddDueDay: UITextField!
     @IBOutlet weak var AddPriority: UITextField!
+    let dateFormat: DateFormatter = DateFormatter()
+    let datePicker: UIDatePicker = UIDatePicker()
+    let dateFormat2: DateFormatter = DateFormatter()
+    let datePicker2: UIDatePicker = UIDatePicker()
     @IBOutlet weak var AddReminder: UITextField!
     @IBOutlet weak var AddOthers: UITextField!
     @IBOutlet weak var saveButton: UIBarButtonItem!
@@ -28,6 +32,36 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        //Luke screwed around here
+        dateFormat.dateStyle = DateFormatter.Style.short
+        dateFormat.timeStyle = DateFormatter.Style.short
+        datePicker.datePickerMode = UIDatePickerMode.dateAndTime
+        datePicker.addTarget(self, action: Selector(("updateDateField")), for:UIControlEvents.valueChanged)
+        AddDueDay.inputView = datePicker
+        dateFormat2.dateStyle = DateFormatter.Style.short
+        dateFormat2.timeStyle = DateFormatter.Style.short
+        datePicker2.datePickerMode = UIDatePickerMode.dateAndTime
+        datePicker2.addTarget(self, action: Selector(("updateDateField")), for: UIControlEvents.valueChanged)
+        AddReminder.inputView = datePicker2
+        
+        func viewWillAppear(animated: Bool) {
+            super.viewDidLoad()
+            self.navigationController?.isToolbarHidden = false
+            self.tabBarController?.tabBar.isHidden = true
+        }
+        func updateDateField(sender: UIDatePicker) {
+            if sender == datePicker
+            {
+                AddDueDay.text = dateFormat.string(from: sender.date)
+            }
+            if sender == datePicker2
+            {
+                AddReminder.text = dateFormat2.string(from: sender.date)
+            }
+        }
+        
         
         guard (self.storyboard?.instantiateViewController(withIdentifier: "AddHomeworkViewController") as? AddHomeworkViewController) != nil else {
             return
@@ -83,9 +117,10 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate{
             let className = AddClass.text ?? ""
             let title = AddTitle.text ?? ""
             let dueDay = AddDueDay.text ?? ""
+            let reminder = AddReminder.text ?? ""
             
             // Set the homework to be passed to HomeworkTableViewController after the unwind segue.
-            homework = Homework(className: className, title: title, dueDay: dueDay)
+        homework = Homework(className: className, title: title, dueDay: dueDay, reminder: reminder)
             
 
     }
