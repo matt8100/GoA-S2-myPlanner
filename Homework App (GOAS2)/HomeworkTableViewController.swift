@@ -50,7 +50,7 @@ class HomeworkTableViewController: UITableViewController {
 
         
         cell.ClassNameLabel.text = homework.className
-        cell.TitleLabel.text = homework.title
+        cell.TitleLabel.text = homework.className
         cell.DueDayLabel.text = homework.dueDay
         
         return cell
@@ -125,23 +125,13 @@ class HomeworkTableViewController: UITableViewController {
     
     //Mark: Private Function
     private func loadSampleHomeworks() {
-<<<<<<< HEAD
-        guard let homework1 = Homework(className: "Math", title: "Pre-calculus 12", dueDay: "Mar 20", reminder: <#String#>) else {
+        guard let homework1 = Homework(className: "Math", title: "Pre-calculus 12", dueDay: "May 20", priority: "high", reminder: String,others:"Test coming soon") else {
             fatalError("Unable to instantiate homework1")
         }
-        guard let homework2 = Homework(className: "Chemistry", title: "Lab 11", dueDay: "Mar 26", reminder: <#String#>) else {
+        guard let homework2 = Homework(className: "Chemistry", title: "Lab 11", dueDay: "May 26",priority: "Medium", reminder: String,others:"") else {
             fatalError("Unable to instantiate homework2")
         }
-        guard let homework3 = Homework(className: "Biology", title: "Protist Test", dueDay: "Apr 3", reminder: <#String#>) else {
-=======
-        guard let homework1 = Homework(className: "Math", title: "Pre-calculus 12", dueDay: "May 20", priority: "high", reminder:"Two days before",others:"Test coming soon") else {
-            fatalError("Unable to instantiate homework1")
-        }
-        guard let homework2 = Homework(className: "Chemistry", title: "Lab 11", dueDay: "May 26",priority: "Medium", reminder:"One week before",others:"") else {
-            fatalError("Unable to instantiate homework2")
-        }
-        guard let homework3 = Homework(className: "Biology", title: "Protist Test", dueDay: "Apr 23", priority: "Low", reminder:"One day before",others:"Test in three weeks") else {
->>>>>>> 7c615a6cf641f82214bd71aa7486ea114e37f298
+        guard let homework3 = Homework(className: "Biology", title: "Protist Test", dueDay: "Apr 23", priority: "Low", reminder: String,others:"Test in three weeks") else {
             fatalError("Unable to instantiate homework3")
         }
         homeworks += [homework1, homework2, homework3]
