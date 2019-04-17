@@ -1,774 +1,775 @@
 // !$*UTF8*$!
 {
-    archiveVersion = 1;
-    classes = {
-    };
-    objectVersion = 50;
-    objects = {
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
 
 /* Begin PBXBuildFile section */
-        2F7D8B37D2DF372CE5D1496A /* Pods_Homework_App__GOAS2_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4207A8DD388ED4885B192E47 /* Pods_Homework_App__GOAS2_.framework */; };
-        4EA99AF60CFBF9FF740783BB /* Pods_Homework_App__GOAS2_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127DA48B32C7B080006D2290 /* Pods_Homework_App__GOAS2_Tests.framework */; };
-        956E158322548542007087E5 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E158222548542007087E5 /* CalendarCell.swift */; };
-        956E1585225486F7007087E5 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E1584225486F7007087E5 /* CalendarViewController.swift */; };
-        A41D024222544DDB00D6B5F9 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D024122544DDB00D6B5F9 /* SettingTableViewController.swift */; };
-        A41D024422544FDB00D6B5F9 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D024322544FDA00D6B5F9 /* Setting.swift */; };
-        A41D024A2254882000D6B5F9 /* AssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D02492254882000D6B5F9 /* AssignmentViewController.swift */; };
-        A493747C2241FDC60062A826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A493747B2241FDC60062A826 /* AppDelegate.swift */; };
-        A493747E2241FDC60062A826 /* AddHomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A493747D2241FDC60062A826 /* AddHomeworkViewController.swift */; };
-        A49374812241FDC60062A826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A493747F2241FDC60062A826 /* Main.storyboard */; };
-        A49374832241FDCE0062A826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A49374822241FDCE0062A826 /* Assets.xcassets */; };
-        A49374862241FDCE0062A826 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A49374842241FDCE0062A826 /* LaunchScreen.storyboard */; };
-        A49374912241FDCF0062A826 /* Homework_App__GOAS2_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49374902241FDCF0062A826 /* Homework_App__GOAS2_Tests.swift */; };
-        A493749C2241FDCF0062A826 /* Homework_App__GOAS2_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A493749B2241FDCF0062A826 /* Homework_App__GOAS2_UITests.swift */; };
-        A4A4AA08225DA2AF00B4168D /* CourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A4AA07225DA2AE00B4168D /* CourseDetailViewController.swift */; };
-        A4CCED4722448EC100476DF5 /* HomeworkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCED4622448EC100476DF5 /* HomeworkTableViewCell.swift */; };
-        A4CCED492244906F00476DF5 /* Homework.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCED482244906F00476DF5 /* Homework.swift */; };
-        A4CCED4B2244B59A00476DF5 /* HomeworkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCED4A2244B59A00476DF5 /* HomeworkTableViewController.swift */; };
-        A4D3DD89224805F1005EC962 /* AddCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D3DD88224805F1005EC962 /* AddCourseViewController.swift */; };
-        A4D3DD8B2248060B005EC962 /* CourseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D3DD8A2248060B005EC962 /* CourseTableViewController.swift */; };
-        A4D3DD8D2248061E005EC962 /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D3DD8C2248061E005EC962 /* CourseTableViewCell.swift */; };
-        A4D3DD8F22488446005EC962 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D3DD8E22488446005EC962 /* Course.swift */; };
-        A8ECC2DD6E014A66F0D753EB /* Pods_Homework_App__GOAS2_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA2B6001EAC14FF6C85DCD6 /* Pods_Homework_App__GOAS2_UITests.framework */; };
+		2F7D8B37D2DF372CE5D1496A /* Pods_Homework_App__GOAS2_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4207A8DD388ED4885B192E47 /* Pods_Homework_App__GOAS2_.framework */; };
+		4EA99AF60CFBF9FF740783BB /* Pods_Homework_App__GOAS2_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127DA48B32C7B080006D2290 /* Pods_Homework_App__GOAS2_Tests.framework */; };
+		956E158322548542007087E5 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E158222548542007087E5 /* CalendarCell.swift */; };
+		956E1585225486F7007087E5 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E1584225486F7007087E5 /* CalendarViewController.swift */; };
+		A41D024222544DDB00D6B5F9 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D024122544DDB00D6B5F9 /* SettingTableViewController.swift */; };
+		A41D024422544FDB00D6B5F9 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D024322544FDA00D6B5F9 /* Setting.swift */; };
+		A41D024A2254882000D6B5F9 /* AssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D02492254882000D6B5F9 /* AssignmentViewController.swift */; };
+		A493747C2241FDC60062A826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A493747B2241FDC60062A826 /* AppDelegate.swift */; };
+		A493747E2241FDC60062A826 /* AddHomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A493747D2241FDC60062A826 /* AddHomeworkViewController.swift */; };
+		A49374812241FDC60062A826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A493747F2241FDC60062A826 /* Main.storyboard */; };
+		A49374832241FDCE0062A826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A49374822241FDCE0062A826 /* Assets.xcassets */; };
+		A49374862241FDCE0062A826 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A49374842241FDCE0062A826 /* LaunchScreen.storyboard */; };
+		A49374912241FDCF0062A826 /* Homework_App__GOAS2_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49374902241FDCF0062A826 /* Homework_App__GOAS2_Tests.swift */; };
+		A493749C2241FDCF0062A826 /* Homework_App__GOAS2_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A493749B2241FDCF0062A826 /* Homework_App__GOAS2_UITests.swift */; };
+		A4A4AA08225DA2AF00B4168D /* CourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A4AA07225DA2AE00B4168D /* CourseDetailViewController.swift */; };
+		A4CCED4722448EC100476DF5 /* HomeworkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCED4622448EC100476DF5 /* HomeworkTableViewCell.swift */; };
+		A4CCED492244906F00476DF5 /* Homework.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCED482244906F00476DF5 /* Homework.swift */; };
+		A4CCED4B2244B59A00476DF5 /* HomeworkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCED4A2244B59A00476DF5 /* HomeworkTableViewController.swift */; };
+		A4D3DD89224805F1005EC962 /* AddCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D3DD88224805F1005EC962 /* AddCourseViewController.swift */; };
+		A4D3DD8B2248060B005EC962 /* CourseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D3DD8A2248060B005EC962 /* CourseTableViewController.swift */; };
+		A4D3DD8D2248061E005EC962 /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D3DD8C2248061E005EC962 /* CourseTableViewCell.swift */; };
+		A4D3DD8F22488446005EC962 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D3DD8E22488446005EC962 /* Course.swift */; };
+		A8ECC2DD6E014A66F0D753EB /* Pods_Homework_App__GOAS2_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA2B6001EAC14FF6C85DCD6 /* Pods_Homework_App__GOAS2_UITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-        A493748D2241FDCF0062A826 /* PBXContainerItemProxy */ = {
-            isa = PBXContainerItemProxy;
-            containerPortal = A49374702241FDC50062A826 /* Project object */;
-            proxyType = 1;
-            remoteGlobalIDString = A49374772241FDC60062A826;
-            remoteInfo = "Homework App (GOAS2)";
-        };
-        A49374982241FDCF0062A826 /* PBXContainerItemProxy */ = {
-            isa = PBXContainerItemProxy;
-            containerPortal = A49374702241FDC50062A826 /* Project object */;
-            proxyType = 1;
-            remoteGlobalIDString = A49374772241FDC60062A826;
-            remoteInfo = "Homework App (GOAS2)";
-        };
+		A493748D2241FDCF0062A826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A49374702241FDC50062A826 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A49374772241FDC60062A826;
+			remoteInfo = "Homework App (GOAS2)";
+		};
+		A49374982241FDCF0062A826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A49374702241FDC50062A826 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A49374772241FDC60062A826;
+			remoteInfo = "Homework App (GOAS2)";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-        127DA48B32C7B080006D2290 /* Pods_Homework_App__GOAS2_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework_App__GOAS2_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-        1359F0EEC5102203F1AE951A /* Pods-Homework App (GOAS2).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2).debug.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)/Pods-Homework App (GOAS2).debug.xcconfig"; sourceTree = "<group>"; };
-        4207A8DD388ED4885B192E47 /* Pods_Homework_App__GOAS2_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework_App__GOAS2_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-        441A4E509E5E4593CA7BEDCB /* Pods-Homework App (GOAS2)UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2)UITests.debug.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)UITests/Pods-Homework App (GOAS2)UITests.debug.xcconfig"; sourceTree = "<group>"; };
-        4CD05B41611AF0C62A54D364 /* Pods-Homework App (GOAS2).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2).release.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)/Pods-Homework App (GOAS2).release.xcconfig"; sourceTree = "<group>"; };
-        5AA2B6001EAC14FF6C85DCD6 /* Pods_Homework_App__GOAS2_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework_App__GOAS2_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-        93E321EADB8BE39D4CB404DA /* Pods-Homework App (GOAS2)UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2)UITests.release.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)UITests/Pods-Homework App (GOAS2)UITests.release.xcconfig"; sourceTree = "<group>"; };
-        956E158222548542007087E5 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
-        956E1584225486F7007087E5 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
-        A41D024122544DDB00D6B5F9 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
-        A41D024322544FDA00D6B5F9 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
-        A41D02492254882000D6B5F9 /* AssignmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentViewController.swift; sourceTree = "<group>"; };
-        A49374782241FDC60062A826 /* Homework App (GOAS2).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework App (GOAS2).app"; sourceTree = BUILT_PRODUCTS_DIR; };
-        A493747B2241FDC60062A826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-        A493747D2241FDC60062A826 /* AddHomeworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHomeworkViewController.swift; sourceTree = "<group>"; };
-        A49374802241FDC60062A826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-        A49374822241FDCE0062A826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-        A49374852241FDCE0062A826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-        A49374872241FDCE0062A826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-        A493748C2241FDCF0062A826 /* Homework App (GOAS2)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Homework App (GOAS2)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-        A49374902241FDCF0062A826 /* Homework_App__GOAS2_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework_App__GOAS2_Tests.swift; sourceTree = "<group>"; };
-        A49374922241FDCF0062A826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-        A49374972241FDCF0062A826 /* Homework App (GOAS2)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Homework App (GOAS2)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-        A493749B2241FDCF0062A826 /* Homework_App__GOAS2_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework_App__GOAS2_UITests.swift; sourceTree = "<group>"; };
-        A493749D2241FDCF0062A826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-        A4A4AA07225DA2AE00B4168D /* CourseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailViewController.swift; sourceTree = "<group>"; };
-        A4CCED4622448EC100476DF5 /* HomeworkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkTableViewCell.swift; sourceTree = "<group>"; };
-        A4CCED482244906F00476DF5 /* Homework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework.swift; sourceTree = "<group>"; };
-        A4CCED4A2244B59A00476DF5 /* HomeworkTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkTableViewController.swift; sourceTree = "<group>"; };
-        A4D3DD88224805F1005EC962 /* AddCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseViewController.swift; sourceTree = "<group>"; };
-        A4D3DD8A2248060B005EC962 /* CourseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewController.swift; sourceTree = "<group>"; };
-        A4D3DD8C2248061E005EC962 /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
-        A4D3DD8E22488446005EC962 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
-        B2F846B166E24C5B247E72F3 /* Pods-Homework App (GOAS2)Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2)Tests.release.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)Tests/Pods-Homework App (GOAS2)Tests.release.xcconfig"; sourceTree = "<group>"; };
-        F5128C1B9E04D0093AB2DE60 /* Pods-Homework App (GOAS2)Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2)Tests.debug.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)Tests/Pods-Homework App (GOAS2)Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		127DA48B32C7B080006D2290 /* Pods_Homework_App__GOAS2_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework_App__GOAS2_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1359F0EEC5102203F1AE951A /* Pods-Homework App (GOAS2).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2).debug.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)/Pods-Homework App (GOAS2).debug.xcconfig"; sourceTree = "<group>"; };
+		4207A8DD388ED4885B192E47 /* Pods_Homework_App__GOAS2_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework_App__GOAS2_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		441A4E509E5E4593CA7BEDCB /* Pods-Homework App (GOAS2)UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2)UITests.debug.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)UITests/Pods-Homework App (GOAS2)UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4CD05B41611AF0C62A54D364 /* Pods-Homework App (GOAS2).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2).release.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)/Pods-Homework App (GOAS2).release.xcconfig"; sourceTree = "<group>"; };
+		5AA2B6001EAC14FF6C85DCD6 /* Pods_Homework_App__GOAS2_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework_App__GOAS2_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93E321EADB8BE39D4CB404DA /* Pods-Homework App (GOAS2)UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2)UITests.release.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)UITests/Pods-Homework App (GOAS2)UITests.release.xcconfig"; sourceTree = "<group>"; };
+		956E158222548542007087E5 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		956E1584225486F7007087E5 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		A41D024122544DDB00D6B5F9 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		A41D024322544FDA00D6B5F9 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		A41D02492254882000D6B5F9 /* AssignmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentViewController.swift; sourceTree = "<group>"; };
+		A49374782241FDC60062A826 /* Homework App (GOAS2).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework App (GOAS2).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A493747B2241FDC60062A826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A493747D2241FDC60062A826 /* AddHomeworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHomeworkViewController.swift; sourceTree = "<group>"; };
+		A49374802241FDC60062A826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A49374822241FDCE0062A826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A49374852241FDCE0062A826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A49374872241FDCE0062A826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A493748C2241FDCF0062A826 /* Homework App (GOAS2)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Homework App (GOAS2)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A49374902241FDCF0062A826 /* Homework_App__GOAS2_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework_App__GOAS2_Tests.swift; sourceTree = "<group>"; };
+		A49374922241FDCF0062A826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A49374972241FDCF0062A826 /* Homework App (GOAS2)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Homework App (GOAS2)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A493749B2241FDCF0062A826 /* Homework_App__GOAS2_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework_App__GOAS2_UITests.swift; sourceTree = "<group>"; };
+		A493749D2241FDCF0062A826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4A4AA07225DA2AE00B4168D /* CourseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailViewController.swift; sourceTree = "<group>"; };
+		A4CCED4622448EC100476DF5 /* HomeworkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkTableViewCell.swift; sourceTree = "<group>"; };
+		A4CCED482244906F00476DF5 /* Homework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework.swift; sourceTree = "<group>"; };
+		A4CCED4A2244B59A00476DF5 /* HomeworkTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkTableViewController.swift; sourceTree = "<group>"; };
+		A4D3DD88224805F1005EC962 /* AddCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseViewController.swift; sourceTree = "<group>"; };
+		A4D3DD8A2248060B005EC962 /* CourseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewController.swift; sourceTree = "<group>"; };
+		A4D3DD8C2248061E005EC962 /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
+		A4D3DD8E22488446005EC962 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		B2F846B166E24C5B247E72F3 /* Pods-Homework App (GOAS2)Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2)Tests.release.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)Tests/Pods-Homework App (GOAS2)Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F5128C1B9E04D0093AB2DE60 /* Pods-Homework App (GOAS2)Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2)Tests.debug.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)Tests/Pods-Homework App (GOAS2)Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-        A49374752241FDC60062A826 /* Frameworks */ = {
-            isa = PBXFrameworksBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                2F7D8B37D2DF372CE5D1496A /* Pods_Homework_App__GOAS2_.framework in Frameworks */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        A49374892241FDCF0062A826 /* Frameworks */ = {
-            isa = PBXFrameworksBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                4EA99AF60CFBF9FF740783BB /* Pods_Homework_App__GOAS2_Tests.framework in Frameworks */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        A49374942241FDCF0062A826 /* Frameworks */ = {
-            isa = PBXFrameworksBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                A8ECC2DD6E014A66F0D753EB /* Pods_Homework_App__GOAS2_UITests.framework in Frameworks */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
+		A49374752241FDC60062A826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F7D8B37D2DF372CE5D1496A /* Pods_Homework_App__GOAS2_.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A49374892241FDCF0062A826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EA99AF60CFBF9FF740783BB /* Pods_Homework_App__GOAS2_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A49374942241FDCF0062A826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8ECC2DD6E014A66F0D753EB /* Pods_Homework_App__GOAS2_UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-        A493746F2241FDC50062A826 = {
-            isa = PBXGroup;
-            children = (
-                A493747A2241FDC60062A826 /* Homework App (GOAS2) */,
-                A493748F2241FDCF0062A826 /* Homework App (GOAS2)Tests */,
-                A493749A2241FDCF0062A826 /* Homework App (GOAS2)UITests */,
-                A49374792241FDC60062A826 /* Products */,
-                CA70B64BAA4A220716E110E1 /* Pods */,
-                B3557DF8A7AAC3EFE83DAD1A /* Frameworks */,
-            );
-            sourceTree = "<group>";
-        };
-        A49374792241FDC60062A826 /* Products */ = {
-            isa = PBXGroup;
-            children = (
-                A49374782241FDC60062A826 /* Homework App (GOAS2).app */,
-                A493748C2241FDCF0062A826 /* Homework App (GOAS2)Tests.xctest */,
-                A49374972241FDCF0062A826 /* Homework App (GOAS2)UITests.xctest */,
-            );
-            name = Products;
-            sourceTree = "<group>";
-        };
-        A493747A2241FDC60062A826 /* Homework App (GOAS2) */ = {
-            isa = PBXGroup;
-            children = (
-                A493747B2241FDC60062A826 /* AppDelegate.swift */,
-                A493747F2241FDC60062A826 /* Main.storyboard */,
-                A4A4AA07225DA2AE00B4168D /* CourseDetailViewController.swift */,
-                A41D02492254882000D6B5F9 /* AssignmentViewController.swift */,
-                956E1584225486F7007087E5 /* CalendarViewController.swift */,
+		A493746F2241FDC50062A826 = {
+			isa = PBXGroup;
+			children = (
+				A493747A2241FDC60062A826 /* Homework App (GOAS2) */,
+				A493748F2241FDCF0062A826 /* Homework App (GOAS2)Tests */,
+				A493749A2241FDCF0062A826 /* Homework App (GOAS2)UITests */,
+				A49374792241FDC60062A826 /* Products */,
+				CA70B64BAA4A220716E110E1 /* Pods */,
+				B3557DF8A7AAC3EFE83DAD1A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A49374792241FDC60062A826 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A49374782241FDC60062A826 /* Homework App (GOAS2).app */,
+				A493748C2241FDCF0062A826 /* Homework App (GOAS2)Tests.xctest */,
+				A49374972241FDCF0062A826 /* Homework App (GOAS2)UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A493747A2241FDC60062A826 /* Homework App (GOAS2) */ = {
+			isa = PBXGroup;
+			children = (
+				A493747B2241FDC60062A826 /* AppDelegate.swift */,
+				A493747F2241FDC60062A826 /* Main.storyboard */,
+				A4A4AA07225DA2AE00B4168D /* CourseDetailViewController.swift */,
+				956E1584225486F7007087E5 /* CalendarViewController.swift */,
 				956E158222548542007087E5 /* CalendarCell.swift */,
 				A41D02492254882000D6B5F9 /* AssignmentViewController.swift */,
-                A41D024122544DDB00D6B5F9 /* SettingTableViewController.swift */,
-                A493747D2241FDC60062A826 /* AddHomeworkViewController.swift */,
-                A4D3DD88224805F1005EC962 /* AddCourseViewController.swift */,
-                A4D3DD8A2248060B005EC962 /* CourseTableViewController.swift */,
-                A4D3DD8C2248061E005EC962 /* CourseTableViewCell.swift */,
-                A4CCED4622448EC100476DF5 /* HomeworkTableViewCell.swift */,
-                A4CCED4A2244B59A00476DF5 /* HomeworkTableViewController.swift */,
-                A4CCED482244906F00476DF5 /* Homework.swift */,
-                A41D024322544FDA00D6B5F9 /* Setting.swift */,
-                A4D3DD8E22488446005EC962 /* Course.swift */,
-                A49374822241FDCE0062A826 /* Assets.xcassets */,
-                A49374842241FDCE0062A826 /* LaunchScreen.storyboard */,
-                A49374872241FDCE0062A826 /* Info.plist */,
-            );
-            path = "Homework App (GOAS2)";
-            sourceTree = "<group>";
-        };
-        A493748F2241FDCF0062A826 /* Homework App (GOAS2)Tests */ = {
-            isa = PBXGroup;
-            children = (
-                A49374902241FDCF0062A826 /* Homework_App__GOAS2_Tests.swift */,
-                A49374922241FDCF0062A826 /* Info.plist */,
-            );
-            path = "Homework App (GOAS2)Tests";
-            sourceTree = "<group>";
-        };
-        A493749A2241FDCF0062A826 /* Homework App (GOAS2)UITests */ = {
-            isa = PBXGroup;
-            children = (
-                A493749B2241FDCF0062A826 /* Homework_App__GOAS2_UITests.swift */,
-                A493749D2241FDCF0062A826 /* Info.plist */,
-            );
-            path = "Homework App (GOAS2)UITests";
-            sourceTree = "<group>";
-        };
-        B3557DF8A7AAC3EFE83DAD1A /* Frameworks */ = {
-            isa = PBXGroup;
-            children = (
-                4207A8DD388ED4885B192E47 /* Pods_Homework_App__GOAS2_.framework */,
-                127DA48B32C7B080006D2290 /* Pods_Homework_App__GOAS2_Tests.framework */,
-                5AA2B6001EAC14FF6C85DCD6 /* Pods_Homework_App__GOAS2_UITests.framework */,
-            );
-            name = Frameworks;
-            sourceTree = "<group>";
-        };
-        CA70B64BAA4A220716E110E1 /* Pods */ = {
-            isa = PBXGroup;
-            children = (
-                1359F0EEC5102203F1AE951A /* Pods-Homework App (GOAS2).debug.xcconfig */,
-                4CD05B41611AF0C62A54D364 /* Pods-Homework App (GOAS2).release.xcconfig */,
-                F5128C1B9E04D0093AB2DE60 /* Pods-Homework App (GOAS2)Tests.debug.xcconfig */,
-                B2F846B166E24C5B247E72F3 /* Pods-Homework App (GOAS2)Tests.release.xcconfig */,
-                441A4E509E5E4593CA7BEDCB /* Pods-Homework App (GOAS2)UITests.debug.xcconfig */,
-                93E321EADB8BE39D4CB404DA /* Pods-Homework App (GOAS2)UITests.release.xcconfig */,
-            );
-            path = Pods;
-            sourceTree = "<group>";
-        };
+				A41D024122544DDB00D6B5F9 /* SettingTableViewController.swift */,
+				A493747D2241FDC60062A826 /* AddHomeworkViewController.swift */,
+				A4D3DD88224805F1005EC962 /* AddCourseViewController.swift */,
+				A4D3DD8A2248060B005EC962 /* CourseTableViewController.swift */,
+				A4D3DD8C2248061E005EC962 /* CourseTableViewCell.swift */,
+				A4CCED4622448EC100476DF5 /* HomeworkTableViewCell.swift */,
+				A4CCED4A2244B59A00476DF5 /* HomeworkTableViewController.swift */,
+				A4CCED482244906F00476DF5 /* Homework.swift */,
+				A41D024322544FDA00D6B5F9 /* Setting.swift */,
+				A4D3DD8E22488446005EC962 /* Course.swift */,
+				A49374822241FDCE0062A826 /* Assets.xcassets */,
+				A49374842241FDCE0062A826 /* LaunchScreen.storyboard */,
+				A49374872241FDCE0062A826 /* Info.plist */,
+			);
+			path = "Homework App (GOAS2)";
+			sourceTree = "<group>";
+		};
+		A493748F2241FDCF0062A826 /* Homework App (GOAS2)Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A49374902241FDCF0062A826 /* Homework_App__GOAS2_Tests.swift */,
+				A49374922241FDCF0062A826 /* Info.plist */,
+			);
+			path = "Homework App (GOAS2)Tests";
+			sourceTree = "<group>";
+		};
+		A493749A2241FDCF0062A826 /* Homework App (GOAS2)UITests */ = {
+			isa = PBXGroup;
+			children = (
+				A493749B2241FDCF0062A826 /* Homework_App__GOAS2_UITests.swift */,
+				A493749D2241FDCF0062A826 /* Info.plist */,
+			);
+			path = "Homework App (GOAS2)UITests";
+			sourceTree = "<group>";
+		};
+		B3557DF8A7AAC3EFE83DAD1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4207A8DD388ED4885B192E47 /* Pods_Homework_App__GOAS2_.framework */,
+				127DA48B32C7B080006D2290 /* Pods_Homework_App__GOAS2_Tests.framework */,
+				5AA2B6001EAC14FF6C85DCD6 /* Pods_Homework_App__GOAS2_UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA70B64BAA4A220716E110E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1359F0EEC5102203F1AE951A /* Pods-Homework App (GOAS2).debug.xcconfig */,
+				4CD05B41611AF0C62A54D364 /* Pods-Homework App (GOAS2).release.xcconfig */,
+				F5128C1B9E04D0093AB2DE60 /* Pods-Homework App (GOAS2)Tests.debug.xcconfig */,
+				B2F846B166E24C5B247E72F3 /* Pods-Homework App (GOAS2)Tests.release.xcconfig */,
+				441A4E509E5E4593CA7BEDCB /* Pods-Homework App (GOAS2)UITests.debug.xcconfig */,
+				93E321EADB8BE39D4CB404DA /* Pods-Homework App (GOAS2)UITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-        A49374772241FDC60062A826 /* Homework App (GOAS2) */ = {
-            isa = PBXNativeTarget;
-            buildConfigurationList = A49374A02241FDCF0062A826 /* Build configuration list for PBXNativeTarget "Homework App (GOAS2)" */;
-            buildPhases = (
-                2D263A7B61799981CAFB4E92 /* [CP] Check Pods Manifest.lock */,
-                A49374742241FDC60062A826 /* Sources */,
-                A49374752241FDC60062A826 /* Frameworks */,
-                A49374762241FDC60062A826 /* Resources */,
-                53355C8C0E94FCF7F5AE5C3E /* [CP] Embed Pods Frameworks */,
-            );
-            buildRules = (
-            );
-            dependencies = (
-            );
-            name = "Homework App (GOAS2)";
-            productName = "Homework App (GOAS2)";
-            productReference = A49374782241FDC60062A826 /* Homework App (GOAS2).app */;
-            productType = "com.apple.product-type.application";
-        };
-        A493748B2241FDCF0062A826 /* Homework App (GOAS2)Tests */ = {
-            isa = PBXNativeTarget;
-            buildConfigurationList = A49374A32241FDCF0062A826 /* Build configuration list for PBXNativeTarget "Homework App (GOAS2)Tests" */;
-            buildPhases = (
-                67428E8CB7796568572239B8 /* [CP] Check Pods Manifest.lock */,
-                A49374882241FDCF0062A826 /* Sources */,
-                A49374892241FDCF0062A826 /* Frameworks */,
-                A493748A2241FDCF0062A826 /* Resources */,
-            );
-            buildRules = (
-            );
-            dependencies = (
-                A493748E2241FDCF0062A826 /* PBXTargetDependency */,
-            );
-            name = "Homework App (GOAS2)Tests";
-            productName = "Homework App (GOAS2)Tests";
-            productReference = A493748C2241FDCF0062A826 /* Homework App (GOAS2)Tests.xctest */;
-            productType = "com.apple.product-type.bundle.unit-test";
-        };
-        A49374962241FDCF0062A826 /* Homework App (GOAS2)UITests */ = {
-            isa = PBXNativeTarget;
-            buildConfigurationList = A49374A62241FDCF0062A826 /* Build configuration list for PBXNativeTarget "Homework App (GOAS2)UITests" */;
-            buildPhases = (
-                3813F61AA703DC59E179183F /* [CP] Check Pods Manifest.lock */,
-                A49374932241FDCF0062A826 /* Sources */,
-                A49374942241FDCF0062A826 /* Frameworks */,
-                A49374952241FDCF0062A826 /* Resources */,
-            );
-            buildRules = (
-            );
-            dependencies = (
-                A49374992241FDCF0062A826 /* PBXTargetDependency */,
-            );
-            name = "Homework App (GOAS2)UITests";
-            productName = "Homework App (GOAS2)UITests";
-            productReference = A49374972241FDCF0062A826 /* Homework App (GOAS2)UITests.xctest */;
-            productType = "com.apple.product-type.bundle.ui-testing";
-        };
+		A49374772241FDC60062A826 /* Homework App (GOAS2) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A49374A02241FDCF0062A826 /* Build configuration list for PBXNativeTarget "Homework App (GOAS2)" */;
+			buildPhases = (
+				2D263A7B61799981CAFB4E92 /* [CP] Check Pods Manifest.lock */,
+				A49374742241FDC60062A826 /* Sources */,
+				A49374752241FDC60062A826 /* Frameworks */,
+				A49374762241FDC60062A826 /* Resources */,
+				53355C8C0E94FCF7F5AE5C3E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Homework App (GOAS2)";
+			productName = "Homework App (GOAS2)";
+			productReference = A49374782241FDC60062A826 /* Homework App (GOAS2).app */;
+			productType = "com.apple.product-type.application";
+		};
+		A493748B2241FDCF0062A826 /* Homework App (GOAS2)Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A49374A32241FDCF0062A826 /* Build configuration list for PBXNativeTarget "Homework App (GOAS2)Tests" */;
+			buildPhases = (
+				67428E8CB7796568572239B8 /* [CP] Check Pods Manifest.lock */,
+				A49374882241FDCF0062A826 /* Sources */,
+				A49374892241FDCF0062A826 /* Frameworks */,
+				A493748A2241FDCF0062A826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A493748E2241FDCF0062A826 /* PBXTargetDependency */,
+			);
+			name = "Homework App (GOAS2)Tests";
+			productName = "Homework App (GOAS2)Tests";
+			productReference = A493748C2241FDCF0062A826 /* Homework App (GOAS2)Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A49374962241FDCF0062A826 /* Homework App (GOAS2)UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A49374A62241FDCF0062A826 /* Build configuration list for PBXNativeTarget "Homework App (GOAS2)UITests" */;
+			buildPhases = (
+				3813F61AA703DC59E179183F /* [CP] Check Pods Manifest.lock */,
+				A49374932241FDCF0062A826 /* Sources */,
+				A49374942241FDCF0062A826 /* Frameworks */,
+				A49374952241FDCF0062A826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A49374992241FDCF0062A826 /* PBXTargetDependency */,
+			);
+			name = "Homework App (GOAS2)UITests";
+			productName = "Homework App (GOAS2)UITests";
+			productReference = A49374972241FDCF0062A826 /* Homework App (GOAS2)UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-        A49374702241FDC50062A826 /* Project object */ = {
-            isa = PBXProject;
-            attributes = {
-                LastSwiftUpdateCheck = 1010;
-                LastUpgradeCheck = 1010;
-                ORGANIZATIONNAME = "Fortune Cookies";
-                TargetAttributes = {
-                    A49374772241FDC60062A826 = {
-                        CreatedOnToolsVersion = 10.1;
-                        LastSwiftMigration = 1010;
-                    };
-                    A493748B2241FDCF0062A826 = {
-                        CreatedOnToolsVersion = 10.1;
-                        TestTargetID = A49374772241FDC60062A826;
-                    };
-                    A49374962241FDCF0062A826 = {
-                        CreatedOnToolsVersion = 10.1;
-                        TestTargetID = A49374772241FDC60062A826;
-                    };
-                };
-            };
-            buildConfigurationList = A49374732241FDC50062A826 /* Build configuration list for PBXProject "Homework App (GOAS2)" */;
-            compatibilityVersion = "Xcode 9.3";
-            developmentRegion = en;
-            hasScannedForEncodings = 0;
-            knownRegions = (
-                en,
-                Base,
-            );
-            mainGroup = A493746F2241FDC50062A826;
-            productRefGroup = A49374792241FDC60062A826 /* Products */;
-            projectDirPath = "";
-            projectRoot = "";
-            targets = (
-                A49374772241FDC60062A826 /* Homework App (GOAS2) */,
-                A493748B2241FDCF0062A826 /* Homework App (GOAS2)Tests */,
-                A49374962241FDCF0062A826 /* Homework App (GOAS2)UITests */,
-            );
-        };
+		A49374702241FDC50062A826 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Fortune Cookies";
+				TargetAttributes = {
+					A49374772241FDC60062A826 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					A493748B2241FDCF0062A826 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A49374772241FDC60062A826;
+					};
+					A49374962241FDCF0062A826 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A49374772241FDC60062A826;
+					};
+				};
+			};
+			buildConfigurationList = A49374732241FDC50062A826 /* Build configuration list for PBXProject "Homework App (GOAS2)" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A493746F2241FDC50062A826;
+			productRefGroup = A49374792241FDC60062A826 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A49374772241FDC60062A826 /* Homework App (GOAS2) */,
+				A493748B2241FDCF0062A826 /* Homework App (GOAS2)Tests */,
+				A49374962241FDCF0062A826 /* Homework App (GOAS2)UITests */,
+			);
+		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-        A49374762241FDC60062A826 /* Resources */ = {
-            isa = PBXResourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                A49374862241FDCE0062A826 /* LaunchScreen.storyboard in Resources */,
-                A49374832241FDCE0062A826 /* Assets.xcassets in Resources */,
-                A49374812241FDC60062A826 /* Main.storyboard in Resources */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        A493748A2241FDCF0062A826 /* Resources */ = {
-            isa = PBXResourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        A49374952241FDCF0062A826 /* Resources */ = {
-            isa = PBXResourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
+		A49374762241FDC60062A826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A49374862241FDCE0062A826 /* LaunchScreen.storyboard in Resources */,
+				A49374832241FDCE0062A826 /* Assets.xcassets in Resources */,
+				A49374812241FDC60062A826 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A493748A2241FDCF0062A826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A49374952241FDCF0062A826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-        2D263A7B61799981CAFB4E92 /* [CP] Check Pods Manifest.lock */ = {
-            isa = PBXShellScriptBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            inputPaths = (
-                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-                "${PODS_ROOT}/Manifest.lock",
-            );
-            name = "[CP] Check Pods Manifest.lock";
-            outputPaths = (
-                "$(DERIVED_FILE_DIR)/Pods-Homework App (GOAS2)-checkManifestLockResult.txt",
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-            shellPath = /bin/sh;
-            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-            showEnvVarsInLog = 0;
-        };
-        3813F61AA703DC59E179183F /* [CP] Check Pods Manifest.lock */ = {
-            isa = PBXShellScriptBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            inputPaths = (
-                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-                "${PODS_ROOT}/Manifest.lock",
-            );
-            name = "[CP] Check Pods Manifest.lock";
-            outputPaths = (
-                "$(DERIVED_FILE_DIR)/Pods-Homework App (GOAS2)UITests-checkManifestLockResult.txt",
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-            shellPath = /bin/sh;
-            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-            showEnvVarsInLog = 0;
-        };
-        53355C8C0E94FCF7F5AE5C3E /* [CP] Embed Pods Frameworks */ = {
-            isa = PBXShellScriptBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            inputPaths = (
-                "${PODS_ROOT}/Target Support Files/Pods-Homework App (GOAS2)/Pods-Homework App (GOAS2)-frameworks.sh",
-                "${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
-            );
-            name = "[CP] Embed Pods Frameworks";
-            outputPaths = (
-                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-            shellPath = /bin/sh;
-            shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Homework App (GOAS2)/Pods-Homework App (GOAS2)-frameworks.sh\"\n";
-            showEnvVarsInLog = 0;
-        };
-        67428E8CB7796568572239B8 /* [CP] Check Pods Manifest.lock */ = {
-            isa = PBXShellScriptBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            inputPaths = (
-                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-                "${PODS_ROOT}/Manifest.lock",
-            );
-            name = "[CP] Check Pods Manifest.lock";
-            outputPaths = (
-                "$(DERIVED_FILE_DIR)/Pods-Homework App (GOAS2)Tests-checkManifestLockResult.txt",
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-            shellPath = /bin/sh;
-            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-            showEnvVarsInLog = 0;
-        };
+		2D263A7B61799981CAFB4E92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Homework App (GOAS2)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3813F61AA703DC59E179183F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Homework App (GOAS2)UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53355C8C0E94FCF7F5AE5C3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Homework App (GOAS2)/Pods-Homework App (GOAS2)-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Homework App (GOAS2)/Pods-Homework App (GOAS2)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67428E8CB7796568572239B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Homework App (GOAS2)Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-        A49374742241FDC60062A826 /* Sources */ = {
-            isa = PBXSourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                A4D3DD8F22488446005EC962 /* Course.swift in Sources */,
-                A493747E2241FDC60062A826 /* AddHomeworkViewController.swift in Sources */,
-                956E158322548542007087E5 /* CalendarCell.swift in Sources */,
-                956E1585225486F7007087E5 /* CalendarViewController.swift in Sources */,
-                A4D3DD89224805F1005EC962 /* AddCourseViewController.swift in Sources */,
-                A4CCED492244906F00476DF5 /* Homework.swift in Sources */,
-                A41D024222544DDB00D6B5F9 /* SettingTableViewController.swift in Sources */,
-                A41D024A2254882000D6B5F9 /* AssignmentViewController.swift in Sources */,
-                A4CCED4722448EC100476DF5 /* HomeworkTableViewCell.swift in Sources */,
-                A41D024422544FDB00D6B5F9 /* Setting.swift in Sources */,
-                A4A4AA08225DA2AF00B4168D /* CourseDetailViewController.swift in Sources */,
-                A4D3DD8D2248061E005EC962 /* CourseTableViewCell.swift in Sources */,
-                A4CCED4B2244B59A00476DF5 /* HomeworkTableViewController.swift in Sources */,
-                A4D3DD8B2248060B005EC962 /* CourseTableViewController.swift in Sources */,
-                A493747C2241FDC60062A826 /* AppDelegate.swift in Sources */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        A49374882241FDCF0062A826 /* Sources */ = {
-            isa = PBXSourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                A49374912241FDCF0062A826 /* Homework_App__GOAS2_Tests.swift in Sources */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        A49374932241FDCF0062A826 /* Sources */ = {
-            isa = PBXSourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                A493749C2241FDCF0062A826 /* Homework_App__GOAS2_UITests.swift in Sources */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
+		A49374742241FDC60062A826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D3DD8F22488446005EC962 /* Course.swift in Sources */,
+				A493747E2241FDC60062A826 /* AddHomeworkViewController.swift in Sources */,
+				956E158322548542007087E5 /* CalendarCell.swift in Sources */,
+				956E1585225486F7007087E5 /* CalendarViewController.swift in Sources */,
+				A4D3DD89224805F1005EC962 /* AddCourseViewController.swift in Sources */,
+				A4CCED492244906F00476DF5 /* Homework.swift in Sources */,
+				A41D024222544DDB00D6B5F9 /* SettingTableViewController.swift in Sources */,
+				A41D024A2254882000D6B5F9 /* AssignmentViewController.swift in Sources */,
+				A4CCED4722448EC100476DF5 /* HomeworkTableViewCell.swift in Sources */,
+				A41D024422544FDB00D6B5F9 /* Setting.swift in Sources */,
+				A4A4AA08225DA2AF00B4168D /* CourseDetailViewController.swift in Sources */,
+				A4D3DD8D2248061E005EC962 /* CourseTableViewCell.swift in Sources */,
+				A4CCED4B2244B59A00476DF5 /* HomeworkTableViewController.swift in Sources */,
+				A4D3DD8B2248060B005EC962 /* CourseTableViewController.swift in Sources */,
+				A493747C2241FDC60062A826 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A49374882241FDCF0062A826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A49374912241FDCF0062A826 /* Homework_App__GOAS2_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A49374932241FDCF0062A826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A493749C2241FDCF0062A826 /* Homework_App__GOAS2_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-        A493748E2241FDCF0062A826 /* PBXTargetDependency */ = {
-            isa = PBXTargetDependency;
-            target = A49374772241FDC60062A826 /* Homework App (GOAS2) */;
-            targetProxy = A493748D2241FDCF0062A826 /* PBXContainerItemProxy */;
-        };
-        A49374992241FDCF0062A826 /* PBXTargetDependency */ = {
-            isa = PBXTargetDependency;
-            target = A49374772241FDC60062A826 /* Homework App (GOAS2) */;
-            targetProxy = A49374982241FDCF0062A826 /* PBXContainerItemProxy */;
-        };
+		A493748E2241FDCF0062A826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A49374772241FDC60062A826 /* Homework App (GOAS2) */;
+			targetProxy = A493748D2241FDCF0062A826 /* PBXContainerItemProxy */;
+		};
+		A49374992241FDCF0062A826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A49374772241FDC60062A826 /* Homework App (GOAS2) */;
+			targetProxy = A49374982241FDCF0062A826 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-        A493747F2241FDC60062A826 /* Main.storyboard */ = {
-            isa = PBXVariantGroup;
-            children = (
-                A49374802241FDC60062A826 /* Base */,
-            );
-            name = Main.storyboard;
-            sourceTree = "<group>";
-        };
-        A49374842241FDCE0062A826 /* LaunchScreen.storyboard */ = {
-            isa = PBXVariantGroup;
-            children = (
-                A49374852241FDCE0062A826 /* Base */,
-            );
-            name = LaunchScreen.storyboard;
-            sourceTree = "<group>";
-        };
+		A493747F2241FDC60062A826 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A49374802241FDC60062A826 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A49374842241FDCE0062A826 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A49374852241FDCE0062A826 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-        A493749E2241FDCF0062A826 /* Debug */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ALWAYS_SEARCH_USER_PATHS = NO;
-                CLANG_ANALYZER_NONNULL = YES;
-                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-                CLANG_CXX_LIBRARY = "libc++";
-                CLANG_ENABLE_MODULES = YES;
-                CLANG_ENABLE_OBJC_ARC = YES;
-                CLANG_ENABLE_OBJC_WEAK = YES;
-                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-                CLANG_WARN_BOOL_CONVERSION = YES;
-                CLANG_WARN_COMMA = YES;
-                CLANG_WARN_CONSTANT_CONVERSION = YES;
-                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-                CLANG_WARN_EMPTY_BODY = YES;
-                CLANG_WARN_ENUM_CONVERSION = YES;
-                CLANG_WARN_INFINITE_RECURSION = YES;
-                CLANG_WARN_INT_CONVERSION = YES;
-                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-                CLANG_WARN_STRICT_PROTOTYPES = YES;
-                CLANG_WARN_SUSPICIOUS_MOVE = YES;
-                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-                CLANG_WARN_UNREACHABLE_CODE = YES;
-                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-                CODE_SIGN_IDENTITY = "iPhone Developer";
-                COPY_PHASE_STRIP = NO;
-                DEBUG_INFORMATION_FORMAT = dwarf;
-                ENABLE_STRICT_OBJC_MSGSEND = YES;
-                ENABLE_TESTABILITY = YES;
-                GCC_C_LANGUAGE_STANDARD = gnu11;
-                GCC_DYNAMIC_NO_PIC = NO;
-                GCC_NO_COMMON_BLOCKS = YES;
-                GCC_OPTIMIZATION_LEVEL = 0;
-                GCC_PREPROCESSOR_DEFINITIONS = (
-                    "DEBUG=1",
-                    "$(inherited)",
-                );
-                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-                GCC_WARN_UNDECLARED_SELECTOR = YES;
-                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-                GCC_WARN_UNUSED_FUNCTION = YES;
-                GCC_WARN_UNUSED_VARIABLE = YES;
-                IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-                MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-                MTL_FAST_MATH = YES;
-                ONLY_ACTIVE_ARCH = YES;
-                SDKROOT = iphoneos;
-                SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-            };
-            name = Debug;
-        };
-        A493749F2241FDCF0062A826 /* Release */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ALWAYS_SEARCH_USER_PATHS = NO;
-                CLANG_ANALYZER_NONNULL = YES;
-                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-                CLANG_CXX_LIBRARY = "libc++";
-                CLANG_ENABLE_MODULES = YES;
-                CLANG_ENABLE_OBJC_ARC = YES;
-                CLANG_ENABLE_OBJC_WEAK = YES;
-                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-                CLANG_WARN_BOOL_CONVERSION = YES;
-                CLANG_WARN_COMMA = YES;
-                CLANG_WARN_CONSTANT_CONVERSION = YES;
-                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-                CLANG_WARN_EMPTY_BODY = YES;
-                CLANG_WARN_ENUM_CONVERSION = YES;
-                CLANG_WARN_INFINITE_RECURSION = YES;
-                CLANG_WARN_INT_CONVERSION = YES;
-                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-                CLANG_WARN_STRICT_PROTOTYPES = YES;
-                CLANG_WARN_SUSPICIOUS_MOVE = YES;
-                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-                CLANG_WARN_UNREACHABLE_CODE = YES;
-                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-                CODE_SIGN_IDENTITY = "iPhone Developer";
-                COPY_PHASE_STRIP = NO;
-                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-                ENABLE_NS_ASSERTIONS = NO;
-                ENABLE_STRICT_OBJC_MSGSEND = YES;
-                GCC_C_LANGUAGE_STANDARD = gnu11;
-                GCC_NO_COMMON_BLOCKS = YES;
-                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-                GCC_WARN_UNDECLARED_SELECTOR = YES;
-                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-                GCC_WARN_UNUSED_FUNCTION = YES;
-                GCC_WARN_UNUSED_VARIABLE = YES;
-                IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-                MTL_ENABLE_DEBUG_INFO = NO;
-                MTL_FAST_MATH = YES;
-                SDKROOT = iphoneos;
-                SWIFT_COMPILATION_MODE = wholemodule;
-                SWIFT_OPTIMIZATION_LEVEL = "-O";
-                VALIDATE_PRODUCT = YES;
-            };
-            name = Release;
-        };
-        A49374A12241FDCF0062A826 /* Debug */ = {
-            isa = XCBuildConfiguration;
-            baseConfigurationReference = 1359F0EEC5102203F1AE951A /* Pods-Homework App (GOAS2).debug.xcconfig */;
-            buildSettings = {
-                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-                CLANG_ENABLE_MODULES = YES;
-                CODE_SIGN_STYLE = Automatic;
-                DEVELOPMENT_TEAM = Y44RT6DAP6;
-                INFOPLIST_FILE = "Homework App (GOAS2)/Info.plist";
-                LD_RUNPATH_SEARCH_PATHS = (
-                    "$(inherited)",
-                    "@executable_path/Frameworks",
-                );
-                OTHER_SWIFT_FLAGS = "$(inherited)";
-                PRODUCT_BUNDLE_IDENTIFIER = HomeworkApp;
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-                SWIFT_VERSION = 4.2;
-                TARGETED_DEVICE_FAMILY = 1;
-            };
-            name = Debug;
-        };
-        A49374A22241FDCF0062A826 /* Release */ = {
-            isa = XCBuildConfiguration;
-            baseConfigurationReference = 4CD05B41611AF0C62A54D364 /* Pods-Homework App (GOAS2).release.xcconfig */;
-            buildSettings = {
-                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-                CLANG_ENABLE_MODULES = YES;
-                CODE_SIGN_STYLE = Automatic;
-                DEVELOPMENT_TEAM = Y44RT6DAP6;
-                INFOPLIST_FILE = "Homework App (GOAS2)/Info.plist";
-                LD_RUNPATH_SEARCH_PATHS = (
-                    "$(inherited)",
-                    "@executable_path/Frameworks",
-                );
-                PRODUCT_BUNDLE_IDENTIFIER = HomeworkApp;
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                SWIFT_VERSION = 4.2;
-                TARGETED_DEVICE_FAMILY = 1;
-            };
-            name = Release;
-        };
-        A49374A42241FDCF0062A826 /* Debug */ = {
-            isa = XCBuildConfiguration;
-            baseConfigurationReference = F5128C1B9E04D0093AB2DE60 /* Pods-Homework App (GOAS2)Tests.debug.xcconfig */;
-            buildSettings = {
-                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-                BUNDLE_LOADER = "$(TEST_HOST)";
-                CODE_SIGN_STYLE = Automatic;
-                DEVELOPMENT_TEAM = 5DA8VT6J9F;
-                INFOPLIST_FILE = "Homework App (GOAS2)Tests/Info.plist";
-                LD_RUNPATH_SEARCH_PATHS = (
-                    "$(inherited)",
-                    "@executable_path/Frameworks",
-                    "@loader_path/Frameworks",
-                );
-                PRODUCT_BUNDLE_IDENTIFIER = "Fortune-Cookies.Homework-App--GOAS2-Tests";
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                SWIFT_VERSION = 4.2;
-                TARGETED_DEVICE_FAMILY = "1,2";
-                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Homework App (GOAS2).app/Homework App (GOAS2)";
-            };
-            name = Debug;
-        };
-        A49374A52241FDCF0062A826 /* Release */ = {
-            isa = XCBuildConfiguration;
-            baseConfigurationReference = B2F846B166E24C5B247E72F3 /* Pods-Homework App (GOAS2)Tests.release.xcconfig */;
-            buildSettings = {
-                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-                BUNDLE_LOADER = "$(TEST_HOST)";
-                CODE_SIGN_STYLE = Automatic;
-                DEVELOPMENT_TEAM = 5DA8VT6J9F;
-                INFOPLIST_FILE = "Homework App (GOAS2)Tests/Info.plist";
-                LD_RUNPATH_SEARCH_PATHS = (
-                    "$(inherited)",
-                    "@executable_path/Frameworks",
-                    "@loader_path/Frameworks",
-                );
-                PRODUCT_BUNDLE_IDENTIFIER = "Fortune-Cookies.Homework-App--GOAS2-Tests";
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                SWIFT_VERSION = 4.2;
-                TARGETED_DEVICE_FAMILY = "1,2";
-                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Homework App (GOAS2).app/Homework App (GOAS2)";
-            };
-            name = Release;
-        };
-        A49374A72241FDCF0062A826 /* Debug */ = {
-            isa = XCBuildConfiguration;
-            baseConfigurationReference = 441A4E509E5E4593CA7BEDCB /* Pods-Homework App (GOAS2)UITests.debug.xcconfig */;
-            buildSettings = {
-                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-                CODE_SIGN_STYLE = Automatic;
-                DEVELOPMENT_TEAM = 5DA8VT6J9F;
-                INFOPLIST_FILE = "Homework App (GOAS2)UITests/Info.plist";
-                LD_RUNPATH_SEARCH_PATHS = (
-                    "$(inherited)",
-                    "@executable_path/Frameworks",
-                    "@loader_path/Frameworks",
-                );
-                PRODUCT_BUNDLE_IDENTIFIER = "Fortune-Cookies.Homework-App--GOAS2-UITests";
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                SWIFT_VERSION = 4.2;
-                TARGETED_DEVICE_FAMILY = "1,2";
-                TEST_TARGET_NAME = "Homework App (GOAS2)";
-            };
-            name = Debug;
-        };
-        A49374A82241FDCF0062A826 /* Release */ = {
-            isa = XCBuildConfiguration;
-            baseConfigurationReference = 93E321EADB8BE39D4CB404DA /* Pods-Homework App (GOAS2)UITests.release.xcconfig */;
-            buildSettings = {
-                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-                CODE_SIGN_STYLE = Automatic;
-                DEVELOPMENT_TEAM = 5DA8VT6J9F;
-                INFOPLIST_FILE = "Homework App (GOAS2)UITests/Info.plist";
-                LD_RUNPATH_SEARCH_PATHS = (
-                    "$(inherited)",
-                    "@executable_path/Frameworks",
-                    "@loader_path/Frameworks",
-                );
-                PRODUCT_BUNDLE_IDENTIFIER = "Fortune-Cookies.Homework-App--GOAS2-UITests";
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                SWIFT_VERSION = 4.2;
-                TARGETED_DEVICE_FAMILY = "1,2";
-                TEST_TARGET_NAME = "Homework App (GOAS2)";
-            };
-            name = Release;
-        };
+		A493749E2241FDCF0062A826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A493749F2241FDCF0062A826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A49374A12241FDCF0062A826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1359F0EEC5102203F1AE951A /* Pods-Homework App (GOAS2).debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y44RT6DAP6;
+				INFOPLIST_FILE = "Homework App (GOAS2)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = HomeworkApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A49374A22241FDCF0062A826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CD05B41611AF0C62A54D364 /* Pods-Homework App (GOAS2).release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y44RT6DAP6;
+				INFOPLIST_FILE = "Homework App (GOAS2)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HomeworkApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A49374A42241FDCF0062A826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5128C1B9E04D0093AB2DE60 /* Pods-Homework App (GOAS2)Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DA8VT6J9F;
+				INFOPLIST_FILE = "Homework App (GOAS2)Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Fortune-Cookies.Homework-App--GOAS2-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Homework App (GOAS2).app/Homework App (GOAS2)";
+			};
+			name = Debug;
+		};
+		A49374A52241FDCF0062A826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2F846B166E24C5B247E72F3 /* Pods-Homework App (GOAS2)Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DA8VT6J9F;
+				INFOPLIST_FILE = "Homework App (GOAS2)Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Fortune-Cookies.Homework-App--GOAS2-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Homework App (GOAS2).app/Homework App (GOAS2)";
+			};
+			name = Release;
+		};
+		A49374A72241FDCF0062A826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 441A4E509E5E4593CA7BEDCB /* Pods-Homework App (GOAS2)UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DA8VT6J9F;
+				INFOPLIST_FILE = "Homework App (GOAS2)UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Fortune-Cookies.Homework-App--GOAS2-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Homework App (GOAS2)";
+			};
+			name = Debug;
+		};
+		A49374A82241FDCF0062A826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93E321EADB8BE39D4CB404DA /* Pods-Homework App (GOAS2)UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DA8VT6J9F;
+				INFOPLIST_FILE = "Homework App (GOAS2)UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Fortune-Cookies.Homework-App--GOAS2-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Homework App (GOAS2)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-        A49374732241FDC50062A826 /* Build configuration list for PBXProject "Homework App (GOAS2)" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                A493749E2241FDCF0062A826 /* Debug */,
-                A493749F2241FDCF0062A826 /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
-        A49374A02241FDCF0062A826 /* Build configuration list for PBXNativeTarget "Homework App (GOAS2)" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                A49374A12241FDCF0062A826 /* Debug */,
-                A49374A22241FDCF0062A826 /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
-        A49374A32241FDCF0062A826 /* Build configuration list for PBXNativeTarget "Homework App (GOAS2)Tests" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                A49374A42241FDCF0062A826 /* Debug */,
-                A49374A52241FDCF0062A826 /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
-        A49374A62241FDCF0062A826 /* Build configuration list for PBXNativeTarget "Homework App (GOAS2)UITests" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                A49374A72241FDCF0062A826 /* Debug */,
-                A49374A82241FDCF0062A826 /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
+		A49374732241FDC50062A826 /* Build configuration list for PBXProject "Homework App (GOAS2)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A493749E2241FDCF0062A826 /* Debug */,
+				A493749F2241FDCF0062A826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A49374A02241FDCF0062A826 /* Build configuration list for PBXNativeTarget "Homework App (GOAS2)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A49374A12241FDCF0062A826 /* Debug */,
+				A49374A22241FDCF0062A826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A49374A32241FDCF0062A826 /* Build configuration list for PBXNativeTarget "Homework App (GOAS2)Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A49374A42241FDCF0062A826 /* Debug */,
+				A49374A52241FDCF0062A826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A49374A62241FDCF0062A826 /* Build configuration list for PBXNativeTarget "Homework App (GOAS2)UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A49374A72241FDCF0062A826 /* Debug */,
+				A49374A82241FDCF0062A826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
-    };
-    rootObject = A49374702241FDC50062A826 /* Project object */;
+	};
+	rootObject = A49374702241FDC50062A826 /* Project object */;
 }
