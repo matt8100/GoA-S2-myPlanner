@@ -425,14 +425,10 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3z1-1L-YBZ">
-<<<<<<< HEAD
-                                                            <rect key="frame" x="36.5" y="43" width="42" height="21"/>
-=======
                                                             <rect key="frame" x="36.5" y="43.5" width="42" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="NFU-Qm-Wif"/>
                                                             </constraints>
->>>>>>> 3c9b9009fd5b08c7303c3b99742a6a3b69aec559
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -885,18 +881,8 @@
         </scene>
     </scenes>
     <resources>
-<<<<<<< HEAD
-        <image name="Block" width="24" height="24"/>
-        <image name="CourseIcon" width="40" height="40"/>
-        <image name="Place" width="24" height="24"/>
-        <image name="ScheduleIcon" width="40" height="40"/>
-        <image name="SettingIcon" width="40" height="40"/>
-        <image name="Time" width="23" height="23"/>
-        <image name="teacher" width="24" height="24"/>
-=======
         <image name="CourseIcon" width="40" height="40"/>
         <image name="ScheduleIcon" width="40" height="40"/>
         <image name="SettingIcon" width="40" height="40"/>
->>>>>>> 3c9b9009fd5b08c7303c3b99742a6a3b69aec559
     </resources>
 </document>
