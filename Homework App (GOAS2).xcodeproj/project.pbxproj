@@ -157,7 +157,6 @@
 				A4CCED4A2244B59A00476DF5 /* HomeworkTableViewController.swift */,
 				A4CCED482244906F00476DF5 /* Homework.swift */,
 				A41D024322544FDA00D6B5F9 /* Setting.swift */,
-				3FF774442266BC75007047EE /* ReminderFunction.swift */,
 				A4D3DD8E22488446005EC962 /* Course.swift */,
 				A49374822241FDCE0062A826 /* Assets.xcassets */,
 				A49374842241FDCE0062A826 /* LaunchScreen.storyboard */,
@@ -435,7 +434,6 @@
 				A4CCED4B2244B59A00476DF5 /* HomeworkTableViewController.swift in Sources */,
 				A4D3DD8B2248060B005EC962 /* CourseTableViewController.swift in Sources */,
 				A493747C2241FDC60062A826 /* AppDelegate.swift in Sources */,
-				3FF774452266BC75007047EE /* ReminderFunction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
