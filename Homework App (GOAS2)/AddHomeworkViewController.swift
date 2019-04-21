@@ -20,7 +20,6 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate{
     let datePicker: UIDatePicker = UIDatePicker()
     let dateFormat2: DateFormatter = DateFormatter()
     let datePicker2: UIDatePicker = UIDatePicker()
-    @IBOutlet weak var AddReminder: UITextField!
     @IBOutlet weak var AddOthers: UITextField!
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
@@ -37,14 +36,9 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate{
         //Luke screwed around here
         dateFormat.dateStyle = DateFormatter.Style.short
         dateFormat.timeStyle = DateFormatter.Style.short
-        datePicker.datePickerMode = UIDatePickerMode.dateAndTime
-        datePicker.addTarget(self, action: Selector(("updateDateField")), for:UIControlEvents.valueChanged)
+        datePicker.datePickerMode = UIDatePicker.Mode.dateAndTime
+        datePicker.addTarget(self, action: Selector(("updateDateField")), for:UIControl.Event.valueChanged)
         AddDueDay.inputView = datePicker
-        dateFormat2.dateStyle = DateFormatter.Style.short
-        dateFormat2.timeStyle = DateFormatter.Style.short
-        datePicker2.datePickerMode = UIDatePickerMode.dateAndTime
-        datePicker2.addTarget(self, action: Selector(("updateDateField")), for: UIControlEvents.valueChanged)
-        AddReminder.inputView = datePicker2
         
         func viewWillAppear(animated: Bool) {
             super.viewDidLoad()
@@ -56,10 +50,7 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate{
             {
                 AddDueDay.text = dateFormat.string(from: sender.date)
             }
-            if sender == datePicker2
-            {
-                AddReminder.text = dateFormat2.string(from: sender.date)
-            }
+           
         }
         
         
@@ -72,7 +63,6 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate{
         AddTitle?.delegate = self
         AddDueDay?.delegate = self
         AddPriority?.delegate = self
-        AddReminder?.delegate = self
         AddOthers?.delegate = self
         
         // Enable the Save button only if the text field has a valid Meal name.
@@ -118,10 +108,9 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate{
             let title = AddTitle.text ?? ""
             let dueDay = AddDueDay.text ?? ""
             let priority = AddPriority.text ?? ""
-            let reminder = AddReminder.text ?? ""
          let others = AddOthers.text ?? ""
             // Set the homework to be passed to HomeworkTableViewController after the unwind segue.
-        homework = Homework(className: className, title: title, dueDay: dueDay, priority: priority, reminder: reminder, others: others)
+        homework = Homework(className: className, title: title, dueDay: dueDay, priority: priority, others: others)
             
 
     }

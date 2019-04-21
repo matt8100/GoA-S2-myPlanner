@@ -34,7 +34,6 @@ class AssignmentViewController: UIViewController{
         titleLabel.text = homework?.title
         dueDayLabel.text = homework?.dueDay
         priorityLabel.text = homework?.priority
-        reminderLabel.text = homework?.reminder
         othersLabel.text = homework?.others
         navigationItem.title = homework?.className
         
