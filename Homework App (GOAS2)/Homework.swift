@@ -15,9 +15,8 @@ class Homework {
     var title: String?
     var dueDay: String?
     var priority: String?
-    var reminder: String?
     var others: String?
-    init?(className: String, title: String?, dueDay: String?, priority: String?, reminder: String?, others: String?){
+    init?(className: String, title: String?, dueDay: String?, priority: String?, others: String?){
         
         // The name must not be empty
         guard !className.isEmpty else {
@@ -30,7 +29,6 @@ class Homework {
         self.title = title
         self.dueDay = dueDay
         self.priority = priority
-        self.reminder = reminder
         self.others = others
     }
 }
