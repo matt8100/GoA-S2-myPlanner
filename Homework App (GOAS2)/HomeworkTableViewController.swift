@@ -51,8 +51,8 @@ class HomeworkTableViewController: UITableViewController {
 
         
         cell.ClassNameLabel.text = homework.className
-        cell.TitleLabel.text = homework.title
-        cell.DueDayLabel.text = homework.dueDay
+        cell.TitleLabel.text = homework.className
+        cell.DueDayLabel.text = homework.dueDay?.trunc(length: 6)
         
         return cell
     }
@@ -77,9 +77,8 @@ class HomeworkTableViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    
+        }
+}
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let assignmentViewController = segue.destination as? AssignmentViewController {
             // We get here when we're about go segue to a AssignmentViewController
@@ -126,15 +125,21 @@ class HomeworkTableViewController: UITableViewController {
     
     //Mark: Private Function
     private func loadSampleHomeworks() {
-        guard let homework1 = Homework(className: "Math", title: "Pre-calculus 12", dueDay: "May 20", priority: "high", reminder:"Two days before",others:"Test coming soon") else {
+        guard let homework1 = Homework(className: "Math", title: "Pre-calculus 12", dueDay: "May 20", priority: "high", others:"Test coming soon") else {
             fatalError("Unable to instantiate homework1")
         }
-        guard let homework2 = Homework(className: "Chemistry", title: "Lab 11", dueDay: "May 26",priority: "Medium", reminder:"One week before",others:"") else {
+        guard let homework2 = Homework(className: "Chemistry", title: "Lab 11", dueDay: "May 26",priority: "Medium", others:"") else {
             fatalError("Unable to instantiate homework2")
         }
-        guard let homework3 = Homework(className: "Biology", title: "Protist Test", dueDay: "Apr 23", priority: "Low", reminder:"One day before",others:"Test in three weeks") else {
+        guard let homework3 = Homework(className: "Biology", title: "Protist Test", dueDay: "Apr 23", priority: "Low",others:"Test in three weeks") else {
             fatalError("Unable to instantiate homework3")
         }
         homeworks += [homework1, homework2, homework3]
+    }
+}
+
+extension String {
+    func trunc(length: Int) -> String {
+        return (self.count > length) ? String(self.prefix(length)) : self
     }
 }
