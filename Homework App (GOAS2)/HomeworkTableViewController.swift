@@ -51,7 +51,7 @@ class HomeworkTableViewController: UITableViewController {
         
         cell.ClassNameLabel.text = homework.className
         cell.TitleLabel.text = homework.className
-        cell.DueDayLabel.text = homework.dueDay
+        cell.DueDayLabel.text = homework.dueDay?.trunc(length: 6)
         
         return cell
     }
@@ -134,5 +134,11 @@ class HomeworkTableViewController: UITableViewController {
             fatalError("Unable to instantiate homework3")
         }
         homeworks += [homework1, homework2, homework3]
+    }
+}
+
+extension String {
+    func trunc(length: Int) -> String {
+        return (self.count > length) ? String(self.prefix(length)) : self
     }
 }
