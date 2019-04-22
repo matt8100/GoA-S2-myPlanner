@@ -13,7 +13,6 @@ class CourseTableViewController: UITableViewController {
 
     //MARK: Properties
     
-    var courses = [Course]()
     var courseToDisplay: Course? = nil
     
     override func viewDidLoad() {
