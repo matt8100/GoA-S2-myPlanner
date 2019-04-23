@@ -11,6 +11,7 @@ import os.log
 
 class AddCourseViewController: UIViewController,UITextFieldDelegate {
     
+
     
     // MARK:Properties
     @IBOutlet weak var AddCourse: UITextField!
@@ -35,6 +36,8 @@ class AddCourseViewController: UIViewController,UITextFieldDelegate {
             return
         }
         
+        self.navigationController?.navigationBar.barTintColor = UIColor(hex: "#FF5941")
+        
         // Handle the text field’s user input through delegate callbacks.
         AddCourse?.delegate = self
         AddBlock?.delegate = self
@@ -43,10 +46,10 @@ class AddCourseViewController: UIViewController,UITextFieldDelegate {
         AddTeacher?.delegate = self
         AddPlace?.delegate = self
         
-        // Enable the Save button only if the text field has a valid Meal name.
+        // Enable the Save button only if the text field has a valid Course name.
         updateSaveButtonState()
     }
-    
+
     //MARK: UITextFieldDelegate
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -72,6 +75,7 @@ class AddCourseViewController: UIViewController,UITextFieldDelegate {
      @IBAction func cancel(_ sender: UIBarButtonItem) {
          dismiss(animated: true, completion: nil)
      }
+    
     // This method lets you configure a view controller before it's presented.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)

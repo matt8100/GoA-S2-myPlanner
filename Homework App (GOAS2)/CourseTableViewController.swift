@@ -48,7 +48,7 @@ class CourseTableViewController: UITableViewController {
         let course = courses[indexPath.row]
 
         cell.nameLabel.text = course.name
-        cell.backgroundColor = course.colour
+        cell.nameLabel.textColor = course.colour
       
         return cell 
     }
@@ -121,13 +121,13 @@ class CourseTableViewController: UITableViewController {
 
     //MARK: Private Methods
     private func loadSampleCourses() {
-        guard let course1 = Course(name: "Math", block:"1-1", colour: UIColor(hex: "#EB5757"),time:"9:00 - 10:30", teacher:"Ms. Gilmer", place:"B202") else {
+        guard let course1 = Course(name: "Math", block:"1-1", colour: UIColor(hex: "#F56976"),time:"9:00 - 10:30", teacher:"Ms. Gilmer", place:"B202") else {
             fatalError("Unable to instantiate course1")
         }
-        guard let course2 = Course(name: "Chemistry", block:"1-2",colour:UIColor(hex: "#F2994A"), time:"10:40 - 12:00", teacher:"Mr. Ryan", place:"B203") else {
+        guard let course2 = Course(name: "Chemistry", block:"1-2",colour:UIColor(hex: "#FF9770"), time:"10:40 - 12:00", teacher:"Mr. Ryan", place:"B203") else {
             fatalError("Unable to instantiate course2")
         }
-        guard let course3 = Course(name: "Biology", block:"2-3",colour:UIColor(hex: "#27AE60"), time:"1:00 - 2:30", teacher:"Ms. Perry", place:"C104") else {
+        guard let course3 = Course(name: "Biology", block:"2-3",colour:UIColor(hex: "#FFD670"), time:"1:00 - 2:30", teacher:"Ms. Perry", place:"C104") else {
             fatalError("Unable to instantiate course3")
         }
         courses += [course1, course2, course3]

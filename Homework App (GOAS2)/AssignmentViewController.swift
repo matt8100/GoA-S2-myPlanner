@@ -20,7 +20,7 @@ class AssignmentViewController: UIViewController{
     @IBOutlet weak var completionPercentage: UILabel!
     
     var homework: Homework? = nil
-    
+    var course: Course? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +36,7 @@ class AssignmentViewController: UIViewController{
         priorityLabel.text = homework?.priority
         othersLabel.text = homework?.others
         navigationItem.title = homework?.className
+        navigationController?.navigationBar.backgroundColor = course?.colour
         
         completionPercentage.text = String(format: "%.0f%%", sliderOutlet.value)
 

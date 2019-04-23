@@ -20,7 +20,7 @@ class HomeworkTableViewController: UITableViewController {
 
         // Use the edit button item provided by the table view controller.
         navigationItem.leftBarButtonItem = editButtonItem
-        self.navigationItem.leftBarButtonItem?.tintColor = UIColor.black;
+        self.navigationItem.leftBarButtonItem?.tintColor = UIColor.white;
         
         
         // Load the sample data.
@@ -48,7 +48,7 @@ class HomeworkTableViewController: UITableViewController {
         }
         // Fetches the appropriate homework for the data source layout.
         let homework = homeworks[indexPath.row]
-
+        
         
         cell.ClassNameLabel.text = homework.className
         cell.TitleLabel.text = homework.className

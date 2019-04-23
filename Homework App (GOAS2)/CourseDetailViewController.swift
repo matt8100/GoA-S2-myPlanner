@@ -31,7 +31,7 @@ class CourseDetailViewController: UIViewController {
         teacherLabel.text = course?.teacher
         placeLabel.text = course?.place
         navigationItem.title = course?.name
-
+        navigationItem.rightBarButtonItem?.tintColor = course?.colour
     }
     
 

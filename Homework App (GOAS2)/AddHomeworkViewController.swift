@@ -48,6 +48,7 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate {
         AddDueDay?.delegate = self
         AddPriority?.delegate = self
         AddOthers?.delegate = self
+        
         // Enable the Save button only if the text field has a valid Meal name.
         updateSaveButtonState()
     }
