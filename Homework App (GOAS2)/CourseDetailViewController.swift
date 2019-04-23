@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import os.log
 class CourseDetailViewController: UIViewController {
 
     // MARK:Properties
@@ -15,6 +15,7 @@ class CourseDetailViewController: UIViewController {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var teacherLabel: UILabel!
     @IBOutlet weak var placeLabel: UILabel!
+    
     
     var course: Course? = nil
     
@@ -31,18 +32,8 @@ class CourseDetailViewController: UIViewController {
         teacherLabel.text = course?.teacher
         placeLabel.text = course?.place
         navigationItem.title = course?.name
-        navigationItem.rightBarButtonItem?.tintColor = course?.colour
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+

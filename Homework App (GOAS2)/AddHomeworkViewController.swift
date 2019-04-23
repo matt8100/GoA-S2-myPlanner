@@ -49,8 +49,10 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate {
         AddPriority?.delegate = self
         AddOthers?.delegate = self
         
+        
         // Enable the Save button only if the text field has a valid Meal name.
         updateSaveButtonState()
+        
     }
     @objc func updateDateField(_ sender: UIDatePicker) {
         let dateFormat: DateFormatter = DateFormatter()

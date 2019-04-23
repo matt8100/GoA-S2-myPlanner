@@ -26,6 +26,7 @@ class CalendarViewController: UIViewController {
         calendarView.scrollingMode   = .stopAtEachCalendarFrame
         calendarView.showsHorizontalScrollIndicator = false
         populateDataSource()
+        
     }
     func populateDataSource() {
         calendarDataSource = [
@@ -111,7 +112,6 @@ extension CalendarViewController: JTAppleCalendarViewDelegate {
         header.monthTitle.text = formatter.string(from: range.start)
         return header
     }
-    
     func calendarSizeForMonths(_ calendar: JTAppleCalendarView?) -> MonthSize? {
         return MonthSize(defaultSize: 50)
     }
