@@ -12,6 +12,7 @@ import Hue
 
 class CalendarViewController: UIViewController {
     @IBOutlet weak var calendarView: JTAppleCalendarView!
+    @IBOutlet weak var constraint: NSLayoutConstraint!
     var calendarDataSource: [String:[String]] = [:]
     var formatter: DateFormatter {
         let formatter = DateFormatter()
@@ -27,13 +28,17 @@ class CalendarViewController: UIViewController {
         populateDataSource()
     }
     func populateDataSource() {
-        // You can get the data from a server.
-        // Then convert that data into a form that can be used by the calendar.
-        for item in homeworks {
-            calendarDataSource[item.dueDay!, default: []] += [item.title!]
+        calendarDataSource = [
+            "May 23 2019": ["Protist Test"],
+            "May 20 2019": ["pg 346 #3-4, 6-9"],
+            "May 26 2019": ["Enthalpy Lab"]
+        ]
+        for homework in homeworks {
+            calendarDataSource[homework.dueDay!, default: []] += [homework.title!]
         }
-        // update the calendar
         calendarView.reloadData()
+        print(calendarDataSource)
+        print(homeworks)
     }
     func configureCell(view: JTAppleCell?, cellState: CellState) {
         guard let cell = view as? CalendarCell  else { return }
@@ -79,7 +84,7 @@ class CalendarViewController: UIViewController {
 extension CalendarViewController: JTAppleCalendarViewDataSource {
     func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
     let startDate = formatter.date(from: "Jan 01 2019")!
-    let endDate = Date()
+    let endDate = formatter.date(from: "Dec 31 2019")!
     return ConfigurationParameters(startDate: startDate, endDate: endDate)
     }
 }
