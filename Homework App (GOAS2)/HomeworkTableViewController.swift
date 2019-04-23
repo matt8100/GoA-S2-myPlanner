@@ -25,7 +25,7 @@ class HomeworkTableViewController: UITableViewController {
         
         // Load the sample data.
         loadSampleHomeworks()
-        
+        print(homeworks)
     }
 
     // MARK: - Table view data source
@@ -51,7 +51,7 @@ class HomeworkTableViewController: UITableViewController {
         
         
         cell.ClassNameLabel.text = homework.className
-        cell.TitleLabel.text = homework.className
+        cell.TitleLabel.text = homework.title
         cell.DueDayLabel.text = homework.dueDay?.trunc(length: 6)
         
         return cell
@@ -125,13 +125,13 @@ class HomeworkTableViewController: UITableViewController {
     
     //Mark: Private Function
     private func loadSampleHomeworks() {
-        guard let homework1 = Homework(className: "Math", title: "Pre-calculus 12", dueDay: "May 20", priority: "high", others:"Test coming soon") else {
+        guard let homework1 = Homework(className: "Math", title: "pg 346 #3-4, 6-9", dueDay: "May 20 2019", priority: "high", others:"Test coming soon") else {
             fatalError("Unable to instantiate homework1")
         }
-        guard let homework2 = Homework(className: "Chemistry", title: "Lab 11", dueDay: "May 26",priority: "Medium", others:"") else {
+        guard let homework2 = Homework(className: "Chemistry", title: "Enthalpy Lab", dueDay: "May 26 2019",priority: "Medium", others:"") else {
             fatalError("Unable to instantiate homework2")
         }
-        guard let homework3 = Homework(className: "Biology", title: "Protist Test", dueDay: "Apr 23", priority: "Low",others:"Test in three weeks") else {
+        guard let homework3 = Homework(className: "Biology", title: "Protist Test", dueDay: "May 23 2019", priority: "Low",others:"Test in three weeks") else {
             fatalError("Unable to instantiate homework3")
         }
         homeworks += [homework1, homework2, homework3]
