@@ -332,13 +332,13 @@
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="jAI-JI-8X3">
                                     <size key="itemSize" width="60" height="60"/>
-                                    <size key="headerReferenceSize" width="50" height="70"/>
+                                    <size key="headerReferenceSize" width="50" height="60"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="calendarCell" id="ikT-fJ-ulv" customClass="CalendarCell" customModule="Homework_App__GOAS2_" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="70" width="60" height="60"/>
+                                        <rect key="frame" x="0.0" y="60" width="60" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -389,17 +389,17 @@
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="CalendarHeader" id="ZBR-Iv-onK" customClass="CalendarHeader" customModule="Homework_App__GOAS2_" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="343" height="70"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="60"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="monthTitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geM-WL-AOn">
-                                            <rect key="frame" x="131" y="16" width="81" height="20.5"/>
+                                            <rect key="frame" x="131" y="8" width="81" height="26.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hKS-wt-m41">
-                                            <rect key="frame" x="0.0" y="41.5" width="343" height="20.5"/>
+                                            <rect key="frame" x="0.0" y="39.5" width="343" height="20.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Adl-mV-lx4">
                                                     <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
@@ -448,9 +448,10 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="geM-WL-AOn" firstAttribute="centerX" secondItem="ZBR-Iv-onK" secondAttribute="centerX" id="POf-Rz-Bdv"/>
-                                        <constraint firstItem="geM-WL-AOn" firstAttribute="top" secondItem="ZBR-Iv-onK" secondAttribute="topMargin" constant="8" id="YA9-m8-D7v"/>
+                                        <constraint firstItem="hKS-wt-m41" firstAttribute="top" secondItem="geM-WL-AOn" secondAttribute="bottom" constant="5" id="nh9-fV-19U"/>
+                                        <constraint firstItem="geM-WL-AOn" firstAttribute="top" secondItem="ZBR-Iv-onK" secondAttribute="top" constant="8" id="oYn-L4-Arw"/>
                                         <constraint firstAttribute="trailing" secondItem="hKS-wt-m41" secondAttribute="trailing" id="rmT-qZ-zZc"/>
-                                        <constraint firstAttribute="bottom" secondItem="hKS-wt-m41" secondAttribute="bottom" constant="8" id="u1A-bL-EyY"/>
+                                        <constraint firstAttribute="bottom" secondItem="hKS-wt-m41" secondAttribute="bottom" id="u1A-bL-EyY"/>
                                         <constraint firstItem="hKS-wt-m41" firstAttribute="centerX" secondItem="ZBR-Iv-onK" secondAttribute="centerX" id="vFu-eG-fdU"/>
                                         <constraint firstItem="hKS-wt-m41" firstAttribute="leading" secondItem="ZBR-Iv-onK" secondAttribute="leading" id="w2E-pi-gCi"/>
                                     </constraints>
