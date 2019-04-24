@@ -81,6 +81,10 @@ class CourseDetailViewController: UIViewController, UITableViewDelegate, UITable
         performSegue(withIdentifier: "courseToHomeworkDetails", sender: self)
     }
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Homework:"
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let assignmentViewController = segue.destination as? AssignmentViewController {
             assignmentViewController.homework = homeworkToSegue

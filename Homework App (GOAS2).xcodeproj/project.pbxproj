@@ -10,6 +10,8 @@
 		48D44ADD27AFF8F4DFF276A0 /* Pods_Homework_App__GOAS2_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2723ECDB3C6C6B2EBE22E0 /* Pods_Homework_App__GOAS2_Tests.framework */; };
 		5ECF977D226FF07C002575CB /* CourseToHomeworkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECF977C226FF07C002575CB /* CourseToHomeworkTableViewCell.swift */; };
 		5ECF977F22700792002575CB /* CalendarHomeworkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECF977E22700792002575CB /* CalendarHomeworkTableViewCell.swift */; };
+		5ECF978422701A89002575CB /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5ECF978222701A89002575CB /* Poppins-Regular.ttf */; };
+		5ECF978522701A89002575CB /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5ECF978322701A89002575CB /* Poppins-Bold.ttf */; };
 		956E158322548542007087E5 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E158222548542007087E5 /* CalendarCell.swift */; };
 		956E1585225486F7007087E5 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E1584225486F7007087E5 /* CalendarViewController.swift */; };
 		95DF6769226D6462006B2B9B /* CalendarHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF6768226D6462006B2B9B /* CalendarHeader.swift */; };
@@ -59,6 +61,8 @@
 		3A1FDA0DFA2EC2C531355AF7 /* Pods-Homework App (GOAS2)UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2)UITests.release.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)UITests/Pods-Homework App (GOAS2)UITests.release.xcconfig"; sourceTree = "<group>"; };
 		5ECF977C226FF07C002575CB /* CourseToHomeworkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseToHomeworkTableViewCell.swift; sourceTree = "<group>"; };
 		5ECF977E22700792002575CB /* CalendarHomeworkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHomeworkTableViewCell.swift; sourceTree = "<group>"; };
+		5ECF978222701A89002575CB /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		5ECF978322701A89002575CB /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		86A5903041B3A39E583CDE26 /* Pods-Homework App (GOAS2).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2).release.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)/Pods-Homework App (GOAS2).release.xcconfig"; sourceTree = "<group>"; };
 		8A937D5679B261FF8A9B0C11 /* Pods_Homework_App__GOAS2_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework_App__GOAS2_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC76FB34EFB9945EE95C07F /* Pods-Homework App (GOAS2)Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2)Tests.debug.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)Tests/Pods-Homework App (GOAS2)Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +137,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5ECF978622701AB6002575CB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5ECF978322701A89002575CB /* Poppins-Bold.ttf */,
+				5ECF978222701A89002575CB /* Poppins-Regular.ttf */,
+			);
+			name = Fonts;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		A493746F2241FDC50062A826 = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +172,7 @@
 		A493747A2241FDC60062A826 /* Homework App (GOAS2) */ = {
 			isa = PBXGroup;
 			children = (
+				5ECF978622701AB6002575CB /* Fonts */,
 				A4D3DD88224805F1005EC962 /* AddCourseViewController.swift */,
 				A493747D2241FDC60062A826 /* AddHomeworkViewController.swift */,
 				A493747B2241FDC60062A826 /* AppDelegate.swift */,
@@ -326,8 +341,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A49374862241FDCE0062A826 /* LaunchScreen.storyboard in Resources */,
+				5ECF978522701A89002575CB /* Poppins-Bold.ttf in Resources */,
 				A49374832241FDCE0062A826 /* Assets.xcassets in Resources */,
 				A49374812241FDC60062A826 /* Main.storyboard in Resources */,
+				5ECF978422701A89002575CB /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
