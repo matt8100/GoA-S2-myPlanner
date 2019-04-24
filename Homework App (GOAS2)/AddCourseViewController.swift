@@ -22,6 +22,8 @@ class AddCourseViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var AddPlace: UITextField!
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
+    
+    
     /*
      This value is either passed by `AddCourseTableViewController` in `prepare(for:sender:)`
      or constructed as part of adding a new Course.
@@ -93,7 +95,7 @@ class AddCourseViewController: UIViewController,UITextFieldDelegate {
         let place = AddPlace.text ?? ""
         
         // Set the course to be passed to CourseTableViewController after the unwind segue.
-        course = Course (name: name, block: block, colour: colour, time: time, teacher: teacher, place: place)
+        course = Course(name: name, block: block, colour: colour, time: time, teacher: teacher, place: place)
 
     }
     
