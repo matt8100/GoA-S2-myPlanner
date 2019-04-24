@@ -10,6 +10,7 @@ import UIKit
 import os.log
 
 class AddHomeworkViewController: UIViewController,UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
+    
     // MARK:Properties
     @IBOutlet weak var AddClass: UITextField!
     @IBOutlet weak var AddTitle: UITextField!
@@ -28,6 +29,7 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate, UIPickerV
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //Luke screwed around here
         let datePicker: UIDatePicker = UIDatePicker()
         datePicker.datePickerMode = UIDatePicker.Mode.date
@@ -44,9 +46,11 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate, UIPickerV
             self.navigationController?.isToolbarHidden = false
             self.tabBarController?.tabBar.isHidden = true
         }
+        
         guard (self.storyboard?.instantiateViewController(withIdentifier: "AddHomeworkViewController") as? AddHomeworkViewController) != nil else {
             return
         }
+        
         // Handle the text field’s user input through delegate callbacks.
         AddClass?.delegate = self
         AddTitle?.delegate = self
@@ -105,6 +109,7 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate, UIPickerV
     }
     
    //MARK: Navigation
+    
     @IBAction func cancel(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
@@ -123,6 +128,7 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate, UIPickerV
             let dueDay = AddDueDay.text ?? ""
             let priority = AddPriority.text ?? ""
             let others = AddOthers.text ?? ""
+        
             // Set the homework to be passed to HomeworkTableViewController after the unwind segue.
         homework = Homework(className: className, title: title, dueDay: dueDay, priority: priority, others: others)
             
