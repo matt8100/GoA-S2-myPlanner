@@ -10,37 +10,77 @@ import UIKit
 import JTAppleCalendar
 import Hue
 
-class CalendarViewController: UIViewController {
+class CalendarViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    //MARK: - IBOutlets
     @IBOutlet weak var calendarView: JTAppleCalendarView!
     @IBOutlet weak var constraint: NSLayoutConstraint!
-    var calendarDataSource: [String:[String]] = [:]
+    @IBOutlet weak var homeworkTableView: UITableView!
+    
+    //MARK: - Variables
+    var calendarDataSource: [String:[Homework]] = [:]
     var formatter: DateFormatter {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMM dd yyyy"
         return formatter
     }
+    var homeworksToShow: [Homework] = []
+    var homeworkToSegue: Homework?
+    
+    //MARK: - ViewController Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        homeworkTableView.delegate = self
+        homeworkTableView.dataSource = self
+        
         calendarView.scrollDirection = .horizontal
         calendarView.scrollingMode   = .stopAtEachCalendarFrame
         calendarView.showsHorizontalScrollIndicator = false
-        populateDataSource()
+        let currentDate = Date()
+        calendarView.scrollToDate(currentDate)
+        calendarView.selectDates([currentDate])
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         
+        populateDataSource()
     }
+    
+    //MARK: - Custom Functions
     func populateDataSource() {
-        calendarDataSource = [
-            "May 23 2019": ["Protist Test"],
-            "May 20 2019": ["pg 346 #3-4, 6-9"],
-            "May 26 2019": ["Enthalpy Lab"]
-        ]
-        for homework in homeworks {
-            calendarDataSource[homework.dueDay!, default: []] += [homework.title!]
+        for homework in homeworks
+        {
+            calendarDataSource[homework.dueDay!] = [homework]
         }
+        
         calendarView.reloadData()
-        print(calendarDataSource)
-        print(homeworks)
     }
+    
+    //MARK: - TableView Delegates
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return homeworksToShow.count
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Homework:"
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "calendarHomework", for: indexPath) as! CalendarHomeworkTableViewCell
+        
+        cell.homeworkTitle.text = homeworksToShow[indexPath.row].title
+        cell.homeworkCourse.text = homeworksToShow[indexPath.row].className
+        
+        return cell
+    }
+    
+    //MARK: - Calendar Delegates
     func configureCell(view: JTAppleCell?, cellState: CellState) {
         guard let cell = view as? CalendarCell  else { return }
         cell.dateLabel.text = cellState.text
@@ -48,6 +88,7 @@ class CalendarViewController: UIViewController {
         handleCellSelected(cell: cell, cellState: cellState)
         handleCellEvents(cell: cell, cellState: cellState)
     }
+    
     func handleCellTextColor(cell: CalendarCell, cellState: CellState) {
         if cellState.dateBelongsTo == .thisMonth {
             cell.dateLabel.textColor = UIColor(hex: "#2A2626")
@@ -55,6 +96,7 @@ class CalendarViewController: UIViewController {
             cell.dateLabel.textColor = UIColor(hex: "#B5B5B5")
         }
     }
+    
     func handleCellSelected(cell: CalendarCell, cellState: CellState) {
         if cellState.isSelected {
             cell.selectedView.layer.cornerRadius =  20
@@ -63,6 +105,7 @@ class CalendarViewController: UIViewController {
             cell.selectedView.isHidden = true
         }
     }
+    
     func handleCellEvents(cell: CalendarCell, cellState: CellState) {
         let dateString = formatter.string(from: cellState.date)
         if calendarDataSource[dateString] == nil {
@@ -71,39 +114,62 @@ class CalendarViewController: UIViewController {
             cell.dotView.isHidden = false
         }
     }
+    
+    //MARK: - Navigation
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        homeworkToSegue = homeworksToShow[indexPath.row]
+        performSegue(withIdentifier: "calendarToHomeworkDetails", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let assignmentViewController = segue.destination as? AssignmentViewController {
+            assignmentViewController.homework = homeworkToSegue
+            assignmentViewController.fromCourse = false
+        }
+    }
 }
 
-/*
- // MARK: - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
- // Get the new view controller using segue.destination.
- // Pass the selected object to the new view controller.
- }
- */
 extension CalendarViewController: JTAppleCalendarViewDataSource {
     func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
     let startDate = formatter.date(from: "Jan 01 2019")!
-    let endDate = formatter.date(from: "Dec 31 2019")!
+    let endDate = formatter.date(from: "Dec 31 2025")!
     return ConfigurationParameters(startDate: startDate, endDate: endDate)
     }
 }
+
 extension CalendarViewController: JTAppleCalendarViewDelegate {
     func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {
     let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: "calendarCell", for: indexPath) as! CalendarCell
         self.calendar(calendar, willDisplay: cell, forItemAt: date, cellState: cellState, indexPath: indexPath)
     return cell
     }
+    
     func calendar(_ calendar: JTAppleCalendarView, willDisplay cell: JTAppleCell, forItemAt date: Date, cellState: CellState, indexPath: IndexPath) {
         configureCell(view: cell, cellState: cellState)
     }
+    
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
         configureCell(view: cell, cellState: cellState)
+        
+        let dateAsString = formatter.string(from: date)
+        
+        homeworksToShow.removeAll()
+        
+        for homework in homeworks
+        {
+            if (homework.dueDay == dateAsString)
+            {
+                homeworksToShow += [homework]
+            }
+        }
+        
+        homeworkTableView.reloadData()
     }
+    
     func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
         configureCell(view: cell, cellState: cellState)
     }
+    
     func calendar(_ calendar: JTAppleCalendarView, headerViewForDateRange range: (start: Date, end: Date), at indexPath: IndexPath) -> JTAppleCollectionReusableView {
         let formatter = DateFormatter()  // Declare this outside, to avoid instancing this heavy class multiple times.
         formatter.dateFormat = "MMMM"
