@@ -21,6 +21,8 @@ class CourseTableViewController: UITableViewController {
         // Use the edit button item provided by the table view controller.
         navigationItem.leftBarButtonItem = editButtonItem
         
+        self.navigationController.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "CaviarDreams", size: 20)!]
+        
         // Load the sample data.
         loadSampleCourses()
     }
@@ -45,10 +47,10 @@ class CourseTableViewController: UITableViewController {
         }
         // Fetches the appropriate course for the data source layout.
         let course = courses[indexPath.row]
-
+      
         cell.nameLabel.text = course.name
         cell.nameLabel.textColor = course.colour
-      
+    
         return cell 
     }
 
@@ -107,14 +109,14 @@ class CourseTableViewController: UITableViewController {
     */
 
     //MARK: Actions
-    func unwindToCourseList(sender: UIStoryboardSegue) {
+    @IBAction func unwindToCourseList(sender: UIStoryboardSegue) {
         if let sourceViewController = sender.source as? AddCourseViewController, let course = sourceViewController.course {
+            
             // Add a new course.
             let newIndexPath = IndexPath(row: courses.count, section: 0)
             
             courses.append(course)
             tableView.insertRows(at: [newIndexPath], with: .automatic)
-            
         }
     }
 

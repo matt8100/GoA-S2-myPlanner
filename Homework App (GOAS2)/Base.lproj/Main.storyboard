@@ -547,7 +547,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="hbK-QJ-PfZ">
                             <connections>
-                                <segue destination="nK8-zY-VpA" kind="unwind" unwindAction="unwindToCourseListWithSender:" id="Wh0-Cp-4c6"/>
+                                <segue destination="nK8-zY-VpA" kind="unwind" unwindAction="unwindToCourseListWithSender:" id="Scu-bm-Cca"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -558,7 +558,7 @@
                         <outlet property="AddPlace" destination="7o4-oE-bMb" id="hRm-CW-WLQ"/>
                         <outlet property="AddTeacher" destination="DwU-kM-09x" id="JTb-5I-Gqa"/>
                         <outlet property="AddTime" destination="pmB-bC-VYD" id="Sw6-1s-mSb"/>
-                        <outlet property="saveButton" destination="hbK-QJ-PfZ" id="Z08-De-a4E"/>
+                        <outlet property="saveButton" destination="hbK-QJ-PfZ" id="0fz-aE-tg6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zAH-Bo-Km6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -690,7 +690,10 @@
                             <offsetWrapper key="textShadowOffset" horizontal="100" vertical="0.0"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="46"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="2" vertical="1"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -712,7 +715,11 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="0.34901960784313724" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="textShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -738,8 +745,10 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="45"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <color key="textShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="2" vertical="1"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
