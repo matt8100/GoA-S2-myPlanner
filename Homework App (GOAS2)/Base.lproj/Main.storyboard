@@ -924,7 +924,6 @@
                                         <connections>
                                             <outlet property="homeworkDueDay" destination="0YA-ne-j3A" id="4f9-ul-MN8"/>
                                             <outlet property="homeworkTitle" destination="UGK-tw-SNf" id="2Iu-ob-9rK"/>
-                                            <segue destination="e5I-7A-hlb" kind="show" identifier="courseToHomeworkDetails" id="tpH-JR-tKr"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -953,6 +952,7 @@
                         <outlet property="placeLabel" destination="ZKY-gU-Qyg" id="iIs-Kr-bpI"/>
                         <outlet property="teacherLabel" destination="iyS-4u-zy2" id="9gd-Pm-GsP"/>
                         <outlet property="timeLabel" destination="7ho-mp-Pnc" id="6l9-bq-7cz"/>
+                        <segue destination="e5I-7A-hlb" kind="show" identifier="courseToHomeworkDetails" id="UpT-7d-3Jd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JWQ-gL-Fai" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1021,7 +1021,7 @@
         <image name="teacher" width="12" height="12"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tpH-JR-tKr"/>
+        <segue reference="UpT-7d-3Jd"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

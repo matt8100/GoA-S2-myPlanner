@@ -78,6 +78,7 @@ class CourseDetailViewController: UIViewController, UITableViewDelegate, UITable
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         homeworkToSegue = homeworkToShow[indexPath.row]
+        performSegue(withIdentifier: "courseToHomeworkDetails", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
