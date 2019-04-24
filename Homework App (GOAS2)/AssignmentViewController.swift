@@ -21,6 +21,7 @@ class AssignmentViewController: UIViewController{
     
     var homework: Homework? = nil
     var course: Course? = nil
+    var fromCourse = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,13 +31,25 @@ class AssignmentViewController: UIViewController{
         }
         
         // In here, I can display the homework object
-        
         titleLabel.text = homework?.title
         dueDayLabel.text = homework?.dueDay
         priorityLabel.text = homework?.priority
         othersLabel.text = homework?.others
-        navigationItem.title = homework?.className
+        
+//        navigationItem.title = homework?.className
         navigationController?.navigationBar.backgroundColor = course?.colour
+        
+        var title: String? = String()
+        
+        if(fromCourse)
+        {
+            title = "Assignment"
+        }
+        else
+        {
+            title = homework?.className
+        }
+        self.title = title
         
         completionPercentage.text = String(format: "%.0f%%", sliderOutlet.value)
 

@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -887,13 +887,69 @@
                                 <rect key="frame" x="13" y="275" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Aah-Jq-svO">
+                                <rect key="frame" x="0.0" y="368" width="375" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="UZH-cq-LxT"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="homeworkOnCategory" id="C0J-ad-vTz" customClass="CourseToHomeworkTableViewCell" customModule="Homework_App__GOAS2_" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C0J-ad-vTz" id="9lh-Ll-9W9">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGK-tw-SNf">
+                                                    <rect key="frame" x="25" y="11.5" width="33.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DueDay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YA-ne-j3A">
+                                                    <rect key="frame" x="304" y="11.5" width="61" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="0YA-ne-j3A" firstAttribute="centerY" secondItem="9lh-Ll-9W9" secondAttribute="centerY" id="Nzv-Nb-lR6"/>
+                                                <constraint firstItem="UGK-tw-SNf" firstAttribute="centerY" secondItem="9lh-Ll-9W9" secondAttribute="centerY" id="Qx6-gZ-LMZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="0YA-ne-j3A" secondAttribute="trailing" constant="10" id="c0R-Zh-K32"/>
+                                                <constraint firstItem="UGK-tw-SNf" firstAttribute="leading" secondItem="9lh-Ll-9W9" secondAttribute="leadingMargin" constant="10" id="dMR-1W-Riu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="homeworkDueDay" destination="0YA-ne-j3A" id="4f9-ul-MN8"/>
+                                            <outlet property="homeworkTitle" destination="UGK-tw-SNf" id="2Iu-ob-9rK"/>
+                                            <segue destination="e5I-7A-hlb" kind="show" identifier="courseToHomeworkDetails" id="tpH-JR-tKr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Homework:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3s-MT-T37">
+                                <rect key="frame" x="10" y="333" width="100" height="21.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Y3s-MT-T37" firstAttribute="centerY" secondItem="m0C-1w-jKL" secondAttribute="centerY" constant="10" id="A9x-Bu-v6D"/>
+                            <constraint firstItem="Aah-Jq-svO" firstAttribute="leading" secondItem="cr2-3s-I6A" secondAttribute="leading" id="Fih-gx-uY8"/>
+                            <constraint firstItem="cr2-3s-I6A" firstAttribute="bottom" secondItem="Aah-Jq-svO" secondAttribute="bottom" id="awu-mV-iJx"/>
+                            <constraint firstItem="cr2-3s-I6A" firstAttribute="trailing" secondItem="Aah-Jq-svO" secondAttribute="trailing" id="gyc-Ri-YW4"/>
+                            <constraint firstItem="Y3s-MT-T37" firstAttribute="leading" secondItem="cr2-3s-I6A" secondAttribute="leading" constant="10" id="hK5-uA-PFX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cr2-3s-I6A"/>
                     </view>
                     <navigationItem key="navigationItem" title="Course" id="r9j-Tu-wre"/>
                     <connections>
                         <outlet property="blockLabel" destination="axA-gA-ReL" id="a4C-LK-QcH"/>
+                        <outlet property="homeworkTableView" destination="Aah-Jq-svO" id="CuO-0y-ez3"/>
                         <outlet property="placeLabel" destination="ZKY-gU-Qyg" id="iIs-Kr-bpI"/>
                         <outlet property="teacherLabel" destination="iyS-4u-zy2" id="9gd-Pm-GsP"/>
                         <outlet property="timeLabel" destination="7ho-mp-Pnc" id="6l9-bq-7cz"/>
@@ -910,7 +966,7 @@
                     <tabBarItem key="tabBarItem" title="Setting" image="SettingIcon" id="PuW-mY-ajJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="9U3-wU-6rA">
-                        <rect key="frame" x="0.0" y="20" width="375" height="103.5"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="0.34760302640000001" blue="0.25595937629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="largeTitleTextAttributes">
@@ -936,7 +992,7 @@
                     <tabBarItem key="tabBarItem" title="Calendar" image="Calendar" id="TTI-Ly-Qx8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ecm-0t-N1g">
-                        <rect key="frame" x="0.0" y="20" width="375" height="103.5"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="0.34901960780000002" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="largeTitleTextAttributes">
@@ -964,5 +1020,8 @@
         <image name="Time" width="11" height="11"/>
         <image name="teacher" width="12" height="12"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="tpH-JR-tKr"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

@@ -132,7 +132,6 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate, UIPickerV
     //MARK: - Custom Functions
     private func updateSaveButtonState() { // Disable the save button if the text field is empty.
         let canSave = !AddClass.text!.isEmpty && !AddTitle.text!.isEmpty
-        print("canSave: \(canSave)")
         
         if(canSave)
         {

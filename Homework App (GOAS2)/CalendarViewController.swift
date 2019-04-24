@@ -38,8 +38,6 @@ class CalendarViewController: UIViewController {
             calendarDataSource[homework.dueDay!, default: []] += [homework.title!]
         }
         calendarView.reloadData()
-        print(calendarDataSource)
-        print(homeworks)
     }
     func configureCell(view: JTAppleCell?, cellState: CellState) {
         guard let cell = view as? CalendarCell  else { return }

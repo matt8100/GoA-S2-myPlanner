@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		48D44ADD27AFF8F4DFF276A0 /* Pods_Homework_App__GOAS2_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2723ECDB3C6C6B2EBE22E0 /* Pods_Homework_App__GOAS2_Tests.framework */; };
+		5ECF977D226FF07C002575CB /* CourseToHomeworkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECF977C226FF07C002575CB /* CourseToHomeworkTableViewCell.swift */; };
 		956E158322548542007087E5 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E158222548542007087E5 /* CalendarCell.swift */; };
 		956E1585225486F7007087E5 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E1584225486F7007087E5 /* CalendarViewController.swift */; };
 		95DF6769226D6462006B2B9B /* CalendarHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF6768226D6462006B2B9B /* CalendarHeader.swift */; };
@@ -55,6 +56,7 @@
 		01706FB3AFA8BB0AC4FA972F /* Pods_Homework_App__GOAS2_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework_App__GOAS2_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF1126E5CC110CE7A688040 /* Pods-Homework App (GOAS2)Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2)Tests.release.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)Tests/Pods-Homework App (GOAS2)Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3A1FDA0DFA2EC2C531355AF7 /* Pods-Homework App (GOAS2)UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2)UITests.release.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)UITests/Pods-Homework App (GOAS2)UITests.release.xcconfig"; sourceTree = "<group>"; };
+		5ECF977C226FF07C002575CB /* CourseToHomeworkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseToHomeworkTableViewCell.swift; sourceTree = "<group>"; };
 		86A5903041B3A39E583CDE26 /* Pods-Homework App (GOAS2).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2).release.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)/Pods-Homework App (GOAS2).release.xcconfig"; sourceTree = "<group>"; };
 		8A937D5679B261FF8A9B0C11 /* Pods_Homework_App__GOAS2_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework_App__GOAS2_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC76FB34EFB9945EE95C07F /* Pods-Homework App (GOAS2)Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework App (GOAS2)Tests.debug.xcconfig"; path = "Target Support Files/Pods-Homework App (GOAS2)Tests/Pods-Homework App (GOAS2)Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				A49374872241FDCE0062A826 /* Info.plist */,
 				A49374842241FDCE0062A826 /* LaunchScreen.storyboard */,
 				A493747F2241FDC60062A826 /* Main.storyboard */,
+				5ECF977C226FF07C002575CB /* CourseToHomeworkTableViewCell.swift */,
 				A41D024322544FDA00D6B5F9 /* Setting.swift */,
 				A41D024122544DDB00D6B5F9 /* SettingTableViewController.swift */,
 			);
@@ -442,6 +445,7 @@
 				A4D3DD8F22488446005EC962 /* Course.swift in Sources */,
 				A493747E2241FDC60062A826 /* AddHomeworkViewController.swift in Sources */,
 				95DF6769226D6462006B2B9B /* CalendarHeader.swift in Sources */,
+				5ECF977D226FF07C002575CB /* CourseToHomeworkTableViewCell.swift in Sources */,
 				956E158322548542007087E5 /* CalendarCell.swift in Sources */,
 				956E1585225486F7007087E5 /* CalendarViewController.swift in Sources */,
 				A4D3DD89224805F1005EC962 /* AddCourseViewController.swift in Sources */,
