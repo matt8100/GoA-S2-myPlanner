@@ -9,7 +9,7 @@
 import UIKit
 import os.log
 
-class AddHomeworkViewController: UIViewController,UITextFieldDelegate {
+class AddHomeworkViewController: UIViewController,UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     // MARK:Properties
     @IBOutlet weak var AddClass: UITextField!
     @IBOutlet weak var AddTitle: UITextField!
@@ -34,6 +34,11 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate {
         datePicker.addTarget(self, action: #selector(updateDateField), for: .valueChanged)
         AddDueDay.inputView = datePicker
         
+        let picker = UIPickerView()
+//        picker.dataSource = self
+        picker.delegate = self
+        AddClass.inputView = picker
+        
         func viewWillAppear(animated: Bool) {
             super.viewDidLoad()
             self.navigationController?.isToolbarHidden = false
@@ -53,12 +58,14 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate {
         // Enable the Save button only if the text field has a valid Meal name.
         updateSaveButtonState()
         
+        //Hod:
     }
+    
     @objc func updateDateField(_ sender: UIDatePicker) {
         let dateFormat: DateFormatter = DateFormatter()
         dateFormat.locale = Locale(identifier: "en_US_POSIX")
         dateFormat.dateFormat = "MMM dd yyyy"
-            AddDueDay.text = dateFormat.string(from: sender.date)
+        AddDueDay.text = dateFormat.string(from: sender.date)
     }
     
     //MARK: UITextFieldDelegate
@@ -78,6 +85,23 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         updateSaveButtonState()
+    }
+    
+    //Mark: - UIPickerView Delegates (added by Hod)
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return courses.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return courses[row].name
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        AddClass.text = courses[row].name
     }
     
    //MARK: Navigation
