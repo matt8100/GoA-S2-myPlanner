@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VV4-89-QbW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VV4-89-QbW">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -277,7 +277,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cv5-9J-jO8">
-                                            <rect key="frame" x="5" y="5" width="365" height="59.5"/>
+                                            <rect key="frame" x="5" y="5" width="365" height="60"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euZ-up-BNo">
                                                     <rect key="frame" x="112.5" y="16" width="140" height="28"/>
@@ -1057,7 +1057,6 @@
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <color key="textShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <offsetWrapper key="textShadowOffset" horizontal="2" vertical="1"/>
                         </textAttributes>
                     </navigationBar>
@@ -1083,6 +1082,7 @@
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="2" vertical="1"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1096,14 +1096,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Block" width="12" height="12"/>
-        <image name="Calendar" width="20" height="20"/>
-        <image name="CourseIcon" width="20" height="20"/>
-        <image name="Place" width="12" height="12"/>
-        <image name="ScheduleIcon" width="20" height="20"/>
-        <image name="SettingIcon" width="20" height="20"/>
-        <image name="Time" width="11" height="11"/>
-        <image name="teacher" width="12" height="12"/>
+        <image name="Block" width="24" height="24"/>
+        <image name="Calendar" width="40" height="40"/>
+        <image name="CourseIcon" width="40" height="40"/>
+        <image name="Place" width="24" height="24"/>
+        <image name="ScheduleIcon" width="40" height="40"/>
+        <image name="SettingIcon" width="40" height="40"/>
+        <image name="Time" width="23" height="23"/>
+        <image name="teacher" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="bNh-f1-zzQ"/>
