@@ -24,9 +24,9 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate, UIPickerV
      or constructed as part of adding a new Homework.
      */
     
-
     var homework: Homework?
     
+    //MARK: - ViewController Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,7 +37,6 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate, UIPickerV
         AddDueDay.inputView = datePicker
         
         let picker = UIPickerView()
-//        picker.dataSource = self
         picker.delegate = self
         AddClass.inputView = picker
         
@@ -59,10 +58,8 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate, UIPickerV
         AddOthers?.delegate = self
         
         
-        // Enable the Save button only if the text field has a valid Meal name.
+        // Enable the Save button only if the text field has valid inputs.
         updateSaveButtonState()
-        
-        //Hod:
     }
     
     @objc func updateDateField(_ sender: UIDatePicker) {
@@ -72,8 +69,7 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate, UIPickerV
         AddDueDay.text = dateFormat.string(from: sender.date)
     }
     
-    //MARK: UITextFieldDelegate
-    
+    //MARK: - UITextFieldDelegate
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // Hide the keyboard.
         textField.resignFirstResponder()
@@ -91,7 +87,7 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate, UIPickerV
         updateSaveButtonState()
     }
     
-    //Mark: - UIPickerView Delegates (added by Hod)
+    //MARK: - UIPickerView Delegates (added by Hod)
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -108,8 +104,7 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate, UIPickerV
         AddClass.text = courses[row].name
     }
     
-   //MARK: Navigation
-    
+   //MARK: - Navigation
     @IBAction func cancel(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
@@ -134,12 +129,19 @@ class AddHomeworkViewController: UIViewController,UITextFieldDelegate, UIPickerV
             
 
     }
-    //MARK: Private Methods
-    
-    private func updateSaveButtonState() {
-        // Disable the Save button if the text field is empty.
-        let text = AddClass.text ?? ""
-        saveButton.isEnabled = !text.isEmpty
+    //MARK: - Custom Functions
+    private func updateSaveButtonState() { // Disable the save button if the text field is empty.
+        let canSave = !AddClass.text!.isEmpty && !AddTitle.text!.isEmpty
+        print("canSave: \(canSave)")
+        
+        if(canSave)
+        {
+            saveButton.isEnabled = true
+        }
+        else
+        {
+            saveButton.isEnabled = false
+        }
     }
     
 }
